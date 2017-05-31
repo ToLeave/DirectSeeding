@@ -32,12 +32,7 @@ var Model = function() {
 //				"registered" : {
 //					url : require.toUrl('./registered.w')
 //				},
-//				"important" : {
-//					url : require.toUrl('./important.w')
-//				},
-//				"personal" : {
-//					url : require.toUrl('./personal.w')
-//				}
+
 			}
 		});
 	};
