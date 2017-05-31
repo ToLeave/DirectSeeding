@@ -114,5 +114,21 @@ var row = event.bindingContext.$object;
 
 
 
+
+
+
+
+	Model.prototype.button11Click = function(event){
+
+justep.Shell.showPage("userinformation")
+	};
+
+
+
+
+
+
+
+
 	return Model;
 });

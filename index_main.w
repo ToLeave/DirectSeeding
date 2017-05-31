@@ -85,7 +85,7 @@
    
    <div component="$UI/system/components/justep/panel/panel" class="panel panel-default x-card" xid="panel3">
     <div class="list-group-item" xid="div14">
-     <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right" label="button" xid="button11" icon="icon-ios7-arrow-right">
+     <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right" label="button" xid="button11" icon="icon-ios7-arrow-right" onClick="button11Click">
       <i xid="i17" class="icon-ios7-arrow-right text-muted"></i>
       <span xid="span14"></span></a> 
      <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" icon="icon-chatbox-working" xid="button2">
