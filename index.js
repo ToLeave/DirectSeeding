@@ -33,6 +33,7 @@ var Model = function() {
 //					url : require.toUrl('./registered.w')
 //				},
 
+
 			}
 		});
 	};
