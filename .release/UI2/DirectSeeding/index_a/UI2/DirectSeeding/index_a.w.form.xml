@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c7Br6R3" component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/window/window" design="device:m;" __cid="c7Br6R3" components="$model/UI2\DirectSeeding\index_a.w/system/components/justep/list/list,$model/UI2\DirectSeeding\index_a.w/system/components/justep/labelEdit/labelEdit,$model/UI2\DirectSeeding\index_a.w/system/components/justep/model/model,$model/UI2\DirectSeeding\index_a.w/system/components/justep/output/output,$model/UI2\DirectSeeding\index_a.w/system/components/justep/row/row,$model/UI2\DirectSeeding\index_a.w/system/components/justep/window/window,$model/UI2\DirectSeeding\index_a.w/system/components/justep/data/data,$model/UI2\DirectSeeding\index_a.w/system/components/justep/timer/timer,$model/UI2\DirectSeeding\index_a.w/system/components/justep/titleBar/titleBar,$model/UI2\DirectSeeding\index_a.w/system/components/justep/button/button,$model/UI2\DirectSeeding\index_a.w/system/components/justep/scrollView/scrollView,$model/UI2\DirectSeeding\index_a.w/system/components/justep/panel/panel,$model/UI2\DirectSeeding\index_a.w/system/components/justep/loadingBar/loadingBar,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-list-padding.c7Br6R3{padding-left: 70px; padding-right: 10px} .timeline.c7Br6R3{position: relative} .x-panel-content.c7Br6R3:before{content: ""; position: absolute; top: 50px; bottom: 0; width: 2px; background: rgb(175, 220, 248); left: 70px} .time.c7Br6R3{position: absolute; left: -65px; top: 10px} .timeline-image.c7Br6R3{position: absolute; height: 10px; width: 10px; left: -5px; top: 15px; border-radius: 50%; z-index: 100} .timeline-content.c7Br6R3{position: relative; border: 1px solid rgb(232, 232, 232); border-left: 0; padding-left: 15px} .x-output.c7Br6R3{text-align: center}</xhtml:style>  
+  <div component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/model/model" xid="model" style="height:auto;top:269px;left:438px;" __cid="c7Br6R3" class="c7Br6R3">
+    <div component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/data/data" autoLoad="true" xid="timeData" idColumn="id" onCustomRefresh="timeDataCustomRefresh" __cid="c7Br6R3" class="c7Br6R3"> 
+      <column name="title" type="String" xid="xid1" __cid="c7Br6R3" class="c7Br6R3"/>  
+      <column label="内容" name="content" type="String" xid="xid2" __cid="c7Br6R3" class="c7Br6R3"/>  
+      <column label="时间" name="time" type="String" xid="xid3" __cid="c7Br6R3" class="c7Br6R3"/>  
+      <column name="id" type="String" xid="xid4" __cid="c7Br6R3" class="c7Br6R3"/>  
+      <data xid="default1" __cid="c7Br6R3" class="c7Br6R3">[{"title":"111","content":"111111","time":"11111","id":"1"},{"title":"222","content":"2222222","time":"22222","id":"2"}]</data>  
+      <column label="日期" name="data" type="String" xid="xid5" __cid="c7Br6R3" class="c7Br6R3"/>
+    </div>
+  </div>  
+  <span component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/timer/timer" xid="timer1" enabled="true" interval="60000" onTimer="timer1Timer" __cid="c7Br6R3" class="c7Br6R3"/>
+  <div component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/panel/panel" class="x-panel x-full c7Br6R3" xid="panel1" __cid="c7Br6R3"> 
+    <div class="x-panel-top c7Br6R3" xid="top1" __cid="c7Br6R3">
+      <div component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/titleBar/titleBar" class="x-titlebar c7Br6R3" xid="titleBar1" __cid="c7Br6R3"> 
+        <div class="x-titlebar-left c7Br6R3" xid="left1" __cid="c7Br6R3"/>  
+        <div class="x-titlebar-title c7Br6R3" xid="title1" __cid="c7Br6R3"> 
+          <span xid="span1" __cid="c7Br6R3" class="c7Br6R3">股神直播</span>
+        </div>  
+        <div class="x-titlebar-right reverse c7Br6R3" xid="right1" __cid="c7Br6R3"> 
+          <a component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/button/button" class="btn btn-link btn-only-icon c7Br6R3" label="目录" xid="menuBtn" icon="icon-compose" __cid="c7Br6R3"> 
+            <i xid="i1" class="icon-compose c7Br6R3" __cid="c7Br6R3"/>  
+            <span xid="span2" __cid="c7Br6R3" class="c7Br6R3">目录</span>
+          </a>  
+          <i xid="i2" __cid="c7Br6R3" class="c7Br6R3"/>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-content  x-scroll-view c7Br6R3" xid="content1" _xid="C6FB78EFFFC00001CA6F1FE07CB01429" style="bottom: 54px;" __cid="c7Br6R3"> 
+      <div class="x-scroll c7Br6R3" component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/scrollView/scrollView" xid="scrollView1" __cid="c7Br6R3"> 
+        <div class="x-content-center x-pull-down container c7Br6R3" xid="div1" __cid="c7Br6R3"> 
+          <i class="x-pull-down-img glyphicon x-icon-pull-down c7Br6R3" xid="i8" __cid="c7Br6R3"/>  
+          <span class="x-pull-down-label c7Br6R3" xid="span15" __cid="c7Br6R3">下拉刷新...</span>
+        </div>
+        <div xid="div5" __cid="c7Br6R3" class="c7Br6R3">
+          <div component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/row/row" class="x-row c7Br6R3" xid="row3" __cid="c7Br6R3"> 
+            <div class="x-col c7Br6R3" xid="col5" __cid="c7Br6R3">
+              <div component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/output/output" class="x-output c7Br6R3" xid="output1" bind-ref="$model.timeData.ref(&quot;data&quot;)" __cid="c7Br6R3"/>
+            </div>  
+            <div class="x-col c7Br6R3" xid="col6" __cid="c7Br6R3">
+              <div component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7Br6R3" xid="labelEdit2" __cid="c7Br6R3"> 
+                <label class="x-label c7Br6R3" xid="label4" __cid="c7Br6R3">还有</label>  
+                <div component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/output/output" class="x-output x-edit c7Br6R3" xid="output2" style="width:152px;" __cid="c7Br6R3"/>
+              </div>
+            </div>  
+            <div class="x-col c7Br6R3" xid="col8" __cid="c7Br6R3"/>
+          </div>
+        </div>
+        <div class="x-scroll-content c7Br6R3" xid="div2" __cid="c7Br6R3">
+          <div component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/list/list" class="x-list x-list-padding c7Br6R3" xid="list1" data="timeData" __cid="c7Br6R3"> 
+            <ul class="x-list-template c7Br6R3" xid="listTemplateUl1" __cid="c7Br6R3"> 
+              <li xid="li1" __cid="c7Br6R3" class="c7Br6R3">
+                <div xid="div4" class="timeline c7Br6R3" __cid="c7Br6R3">
+                  <div xid="div6" class="time c7Br6R3" __cid="c7Br6R3">
+                    <span xid="span3" bind-style="{&quot;color&quot;: $model.changeColor( $object.val(&quot;id&quot;))}" bind-text="ref(&quot;time&quot;)" __cid="c7Br6R3" class="c7Br6R3"/>
+                  </div>
+                  <div xid="div3" class="timeline-image c7Br6R3" bind-style="{&quot;background-color&quot;: $model.changeColor( $object.val(&quot;id&quot;))}" __cid="c7Br6R3"/>  
+                  <div component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/row/row" class="x-row timeline-content c7Br6R3" xid="row2" __cid="c7Br6R3"> 
+                    <div class="x-col c7Br6R3" xid="col4" __cid="c7Br6R3">
+                      <span xid="span14" style="font-weight:bold;" bind-text="ref('content')" __cid="c7Br6R3" class="c7Br6R3"/>  
+                      <p xid="p1" style="font-size:x-small;" __cid="c7Br6R3" class="c7Br6R3"/>
+                    </div> 
+                  </div>
+                </div>
+              </li>
+            </ul> 
+          </div>
+        </div>  
+        <div class="x-content-center x-pull-up c7Br6R3" xid="div7" __cid="c7Br6R3"> 
+          <span class="x-pull-up-label c7Br6R3" xid="span6" __cid="c7Br6R3">加载更多...</span>
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom c7Br6R3" xid="bottom1" height="54" __cid="c7Br6R3">
+      <div component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/row/row" class="x-row text-center c7Br6R3" xid="row1" __cid="c7Br6R3"> 
+        <div class="x-col c7Br6R3" xid="col1" __cid="c7Br6R3"> 
+          <a component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-left c7Br6R3" label="实盘直播" xid="bookshelvesBtn" icon="linear linear-textalignjustify" __cid="c7Br6R3"> 
+            <i xid="i5" class="linear linear-textalignjustify c7Br6R3" __cid="c7Br6R3"/>  
+            <span xid="span7" __cid="c7Br6R3" class="c7Br6R3">实盘直播</span>
+          </a> 
+        </div>  
+        <div class="x-col c7Br6R3" xid="col2" __cid="c7Br6R3"> 
+          <a component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-left c7Br6R3" label="黄金实盘" xid="bookCityBtn" icon="icon-stats-bars" __cid="c7Br6R3"> 
+            <i xid="i6" class="icon-stats-bars c7Br6R3" __cid="c7Br6R3"/>  
+            <span xid="span8" __cid="c7Br6R3" class="c7Br6R3">黄金实盘</span>
+          </a> 
+        </div>  
+        <div class="x-col c7Br6R3" xid="col3" __cid="c7Br6R3"> 
+          <a component="$model/UI2\DirectSeeding\index_a.w/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-left c7Br6R3" label="我要赚钱" xid="personalCenterBtn" icon="linear linear-chevronup" onClick="personalCenterBtnClick" __cid="c7Br6R3"> 
+            <i xid="i7" class="linear linear-chevronup c7Br6R3" __cid="c7Br6R3"/>  
+            <span xid="span9" __cid="c7Br6R3" class="c7Br6R3">我要赚钱</span>
+          </a> 
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" class="main13 cfAVJfi" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfAVJfi" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/bootstrap/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">h5.cfAVJfi, .h5.cfAVJfi{color: rgb(0, 0, 0); font-size: 16px} .text-danger.cfAVJfi{color: rgb(234, 65, 60)} .text-black.cfAVJfi{color: rgb(0, 0, 0)} .x-panel-top.cfAVJfi .x-titlebar.cfAVJfi{background-color: rgb(234, 65, 60)} .x-bar.cfAVJfi{background-color: rgb(225, 225, 225); border: none} .x-titlebar.cfAVJfi .x-titlebar-right.cfAVJfi .btn.cfAVJfi{padding-left: 30px} .img1.cfAVJfi{height: 200px} .img3.cfAVJfi{height: 60px} .img_new.cfAVJfi{width: 100px; height: 70px} .img_small.cfAVJfi{height: 15px} .img_cloud.cfAVJfi{height: 30px} .btn.cfAVJfi i.cfAVJfi{font-size: 20px} .o-nomargintop.cfAVJfi{margin-top: 0} .x-nav.x-row.cfAVJfi, .x-nav.cfAVJfi .x-col.cfAVJfi{padding: 0; background-color: rgb(250, 250, 250)} .x-nav.cfAVJfi .x-col.cfAVJfi:nth-child(1){height: 41px; overflow: hidden} .x-nav.cfAVJfi .x-col.cfAVJfi:nth-child(2){width: 50px} .x-nav.cfAVJfi .x-col.cfAVJfi .x-navbox.cfAVJfi{height: 61px; overflow-x: scroll; overflow-y: hidden} .x-nav.cfAVJfi .x-col.cfAVJfi .x-navbox.cfAVJfi .btn-group.cfAVJfi{width: 480px} .x-nav.cfAVJfi .btn-group.cfAVJfi .btn.cfAVJfi{height: 41px; border-top: 0; font-weight: normal; color: rgb(153, 153, 153)} .x-nav.cfAVJfi .btn-group.cfAVJfi .btn.active.cfAVJfi{height: 41px; border-bottom: 2px solid rgb(234, 65, 60); color: rgb(234, 65, 60)} .x-nav.cfAVJfi .navMoreBtn.cfAVJfi{background-color: rgb(225, 225, 225)} .x-popOver-overlay.cfAVJfi{background-color: rgb(0, 0, 0)} .x-popOver-content.cfAVJfi{border-radius: 0} .x-wangyiOver.cfAVJfi h5.cfAVJfi{padding-left: 15px} .x-wangyiOver.cfAVJfi .x-titlebar.cfAVJfi{height: 40px; background-color: rgb(241, 241, 241)} .x-wangyiOver.cfAVJfi .x-navGroup.cfAVJfi{padding-bottom: 0} .x-wangyiOver.cfAVJfi .x-navGroup.cfAVJfi .col-xs-3.cfAVJfi{padding-left: 3px; padding-right: 3px} .x-wangyiOver.cfAVJfi .x-navGroup.cfAVJfi .btn.cfAVJfi{border-color: rgb(204, 204, 204); border-radius: 3px; margin-bottom: 10px; color: rgb(102, 102, 102); display: block} .x-wangyiOver.cfAVJfi .x-navGroup.cfAVJfi .btn.active.cfAVJfi{border-color: red; background-color: rgb(234, 65, 60); color: rgb(255, 255, 255)} .x-seach.cfAVJfi{background-color: rgb(246, 246, 246); display: none} .x-seach.cfAVJfi span.cfAVJfi{margin: 10px 10px 0 0} .x-wangyi.btn-group.cfAVJfi{background-color: rgb(255, 255, 255)} .x-wangyi.btn-group.cfAVJfi .btn.cfAVJfi{border-top: 0} .x-wangyi.btn-group.cfAVJfi .btn.cfAVJfi span.cfAVJfi{font-size: 12px; font-weight: normal} .x-card.btn-group.cfAVJfi .btn.active.cfAVJfi{color: rgb(234, 65, 60); padding: 0; border-top: 0} .x-banner.cfAVJfi{overflow-x: hidden} .x-banner.cfAVJfi .carousel-indicators.cfAVJfi{bottom: 20px; margin-left: 10%} .x-banner.cfAVJfi .carousel-indicators.cfAVJfi .active.cfAVJfi{width: 8px; height: 8px} .x-banner.cfAVJfi .carousel-indicators.cfAVJfi li.cfAVJfi{width: 6px; height: 6px} .x-banner.cfAVJfi .x-contents.cfAVJfi .x-contents-content.cfAVJfi .x-title.cfAVJfi{background-color: rgb(255, 255, 255); padding: 5px} .x-wangyi.panel.cfAVJfi{margin-bottom: 10px} .x-wangyi.panel.cfAVJfi &gt; .panel-heading.cfAVJfi .panel-title.cfAVJfi{color: rgb(51, 51, 51)} .x-wangyi.cfAVJfi .list-group-item.cfAVJfi{border-radius: 0} .x-wangyi.cfAVJfi .list-group-item.cfAVJfi:last-child{border-bottom: 0} .o-nomargin.cfAVJfi{margin-left: 0; margin-right: 0} .o-nopadding.cfAVJfi{padding-left: 0; padding-right: 0}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cfAVJfi" class="cfAVJfi"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver x-wangyiOver cfAVJfi" xid="popOver" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;navMenuTop&quot;,&quot;direction&quot;:&quot;right-bottom&quot;,&quot;opacity&quot;:0.5}" __cid="cfAVJfi"> 
+    <div class="x-popOver-overlay cfAVJfi" xid="div2" __cid="cfAVJfi"/>  
+    <div xid="div4" class="x-full x-popOver-content panel cfAVJfi" __cid="cfAVJfi"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cfAVJfi" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-up&quot;}" __cid="cfAVJfi"> 
+        <i xid="i9" class="text-muted icon-ios7-arrow-up cfAVJfi" __cid="cfAVJfi"/> 
+      </a>  
+      <h5 class="text-muted cfAVJfi" __cid="cfAVJfi">切换栏目</h5>  
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row o-nomargin x-navGroup panel-body cfAVJfi" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cfAVJfi"> 
+        <div class="col col-xs-3  cfAVJfi" xid="col4" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label active cfAVJfi" xid="button3" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;头条&quot;,&quot;target&quot;:&quot;navContent1&quot;}" __cid="cfAVJfi"> 
+            <i xid="i10" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span18" __cid="cfAVJfi" class="cfAVJfi">头条</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col5" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;娱乐&quot;,&quot;target&quot;:&quot;navContent2&quot;}" __cid="cfAVJfi"> 
+            <i xid="i11" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span19" __cid="cfAVJfi" class="cfAVJfi">娱乐</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col6" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;热点&quot;,&quot;target&quot;:&quot;navContent3&quot;}" __cid="cfAVJfi"> 
+            <i xid="i22" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span26" __cid="cfAVJfi" class="cfAVJfi">热点</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col7" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button7" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;体育&quot;,&quot;target&quot;:&quot;navContent4&quot;}" __cid="cfAVJfi"> 
+            <i xid="i23" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span27" __cid="cfAVJfi" class="cfAVJfi">体育</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col5" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;昆明&quot;,&quot;target&quot;:&quot;navContent5&quot;}" __cid="cfAVJfi"> 
+            <i xid="i11" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span19" __cid="cfAVJfi" class="cfAVJfi">昆明</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col5" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;财经&quot;,&quot;target&quot;:&quot;navContent6&quot;}" __cid="cfAVJfi"> 
+            <i xid="i11" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span19" __cid="cfAVJfi" class="cfAVJfi">财经</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col5" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;科技&quot;,&quot;target&quot;:&quot;navContent7&quot;}" __cid="cfAVJfi"> 
+            <i xid="i11" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span19" __cid="cfAVJfi" class="cfAVJfi">科技</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col5" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;图片&quot;,&quot;target&quot;:&quot;navContent8&quot;}" __cid="cfAVJfi"> 
+            <i xid="i11" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span19" __cid="cfAVJfi" class="cfAVJfi">图片</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col5" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;跟帖&quot;,&quot;target&quot;:&quot;navContent9&quot;}" __cid="cfAVJfi"> 
+            <i xid="i11" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span19" __cid="cfAVJfi" class="cfAVJfi">跟帖</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col5" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;直播&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i11" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span19" __cid="cfAVJfi" class="cfAVJfi">直播</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col5" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;时尚&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i11" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span19" __cid="cfAVJfi" class="cfAVJfi">时尚</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col5" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label o-nopadding cfAVJfi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;轻松一刻&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i11" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span19" __cid="cfAVJfi" class="cfAVJfi">轻松一刻</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col5" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;汽车&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i11" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span19" __cid="cfAVJfi" class="cfAVJfi">汽车</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col5" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;段子&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i11" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span19" __cid="cfAVJfi" class="cfAVJfi">段子</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col5" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;军事&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i11" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span19" __cid="cfAVJfi" class="cfAVJfi">军事</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col5" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.hide'}" data-config="{&quot;label&quot;:&quot;房产&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i11" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span19" __cid="cfAVJfi" class="cfAVJfi">房产</span> 
+          </a> 
+        </div> 
+      </div>  
+      <div xid="div9" class="panel-heading cfAVJfi" __cid="cfAVJfi" data-bind="text:'点击添加更多栏目'"/>  
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row o-nomargin x-navGroup panel-body bg-muted cfAVJfi" xid="row3" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cfAVJfi"> 
+        <div class="col col-xs-3 cfAVJfi" xid="col9" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;NBA&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i25" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span31" __cid="cfAVJfi" class="cfAVJfi">NBA</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col8" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;社会&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i26" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span29" __cid="cfAVJfi" class="cfAVJfi">社会</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col11" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;哒哒&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i27" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span28" __cid="cfAVJfi" class="cfAVJfi">哒哒</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col10" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button9" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;影视&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i24" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span30" __cid="cfAVJfi" class="cfAVJfi">影视</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col8" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;彩票&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i26" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span29" __cid="cfAVJfi" class="cfAVJfi">彩票</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col8" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label o-nopadding cfAVJfi" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;中国足球&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i26" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span29" __cid="cfAVJfi" class="cfAVJfi">中国足球</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col8" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;CBA&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i26" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span29" __cid="cfAVJfi" class="cfAVJfi">CBA</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col8" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;跑步&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i26" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span29" __cid="cfAVJfi" class="cfAVJfi">跑步</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col8" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;手机&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i26" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span29" __cid="cfAVJfi" class="cfAVJfi">手机</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col8" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;数码&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i26" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span29" __cid="cfAVJfi" class="cfAVJfi">数码</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col8" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label o-nopadding cfAVJfi" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;移动互联&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i26" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span29" __cid="cfAVJfi" class="cfAVJfi">移动互联</span> 
+          </a> 
+        </div>  
+        <div class="col col-xs-3 cfAVJfi" xid="col8" __cid="cfAVJfi"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label o-nopadding cfAVJfi" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;云课堂&quot;,&quot;target&quot;:&quot;&quot;}" __cid="cfAVJfi"> 
+            <i xid="i26" __cid="cfAVJfi" class="cfAVJfi"/>  
+            <span xid="span29" __cid="cfAVJfi" class="cfAVJfi">云课堂</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cfAVJfi" xid="popOverMore" style="height:100%;" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&quot;anchor&quot;:&quot;titleBar&quot;,&quot;position&quot;:&quot;center&quot;}" __cid="cfAVJfi"> 
+    <div class="x-popOver-overlay cfAVJfi" xid="div13" __cid="cfAVJfi"/>  
+    <div class="x-full x-popOver-content panel cfAVJfi" xid="div14" __cid="cfAVJfi"> 
+      <div xid="div15" class="panel-body cfAVJfi" __cid="cfAVJfi"> 
+        <div xid="div19" class="col-xs-6 pull-left media cfAVJfi" __cid="cfAVJfi"> 
+          <h1 xid="h11" class="media-left text-danger cfAVJfi" __cid="cfAVJfi">21</h1>  
+          <div xid="div27" class="media-body cfAVJfi" __cid="cfAVJfi"> 
+            <span xid="span14" class="text-danger cfAVJfi" __cid="cfAVJfi">℃</span>  
+            <p xid="p1" __cid="cfAVJfi" class="cfAVJfi" data-bind="text:'10/22℃'"/> 
+          </div> 
+        </div>  
+        <div xid="div26" class="col-xs-6 pull-left text-right cfAVJfi" __cid="cfAVJfi"> 
+          <img src="" alt="" xid="image15" class="img_cloud cfAVJfi" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/cloud.png')}"/>  
+          <div xid="div28" __cid="cfAVJfi" class="cfAVJfi" data-bind="text:'多云 微风'"/>  
+          <div xid="div29" __cid="cfAVJfi" class="cfAVJfi" data-bind="text:'昆明'"/> 
+        </div>  
+        <div xid="div30" class="col-xs-12 pull-left cfAVJfi" __cid="cfAVJfi"> 
+          <span xid="span21" __cid="cfAVJfi" class="cfAVJfi">2015/10/14 星期五</span>  
+          <p xid="p2" __cid="cfAVJfi" class="cfAVJfi" data-bind="text:'PM2.5 24 优'"/> 
+        </div> 
+      </div>  
+      <div component="$model/UI2/system/components/bootstrap/row/row" class="row text-center panel-body o-nomargin o-nopadding cfAVJfi" xid="row4" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cfAVJfi"> 
+        <div class="col col-xs-4 o-nopadding cfAVJfi" xid="col12" __cid="cfAVJfi"> 
+          <img src="" alt="" class="img3 cfAVJfi" xid="image5" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/more1.png')}"/>  
+          <div xid="div25" class="text-muted h6 cfAVJfi" __cid="cfAVJfi" data-bind="text:'搜索'"/> 
+        </div>  
+        <div class="col col-xs-4 o-nopadding cfAVJfi" xid="col14" __cid="cfAVJfi"> 
+          <img src="" alt="" class="img3 cfAVJfi" xid="image12" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/more2.png')}"/>  
+          <div xid="div24" class="text-muted h6 cfAVJfi" __cid="cfAVJfi" data-bind="text:'上头条'"/> 
+        </div>  
+        <div class="col col-xs-4 o-nopadding cfAVJfi" xid="col13" __cid="cfAVJfi"> 
+          <img src="" alt="" xid="image5" class="img3 cfAVJfi" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/more3.png')}"/>  
+          <div xid="div23" class="text-muted h6 cfAVJfi" __cid="cfAVJfi" data-bind="text:'离线'"/> 
+        </div>  
+        <div class="col col-xs-4 o-nopadding cfAVJfi" xid="col12" __cid="cfAVJfi"> 
+          <img src="" alt="" class="img3 cfAVJfi" xid="image5" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/more4.png')}"/>  
+          <div xid="div25" class="text-muted h6 cfAVJfi" __cid="cfAVJfi" data-bind="text:'夜间'"/> 
+        </div>  
+        <div class="col col-xs-4 o-nopadding cfAVJfi" xid="col12" __cid="cfAVJfi"> 
+          <img src="" alt="" class="img3 cfAVJfi" xid="image5" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/more5.png')}"/>  
+          <div xid="div25" class="text-muted h6 cfAVJfi" __cid="cfAVJfi" data-bind="text:'扫一扫'"/> 
+        </div>  
+        <div class="col col-xs-4 o-nopadding cfAVJfi" xid="col12" __cid="cfAVJfi"> 
+          <img src="" alt="" class="img3 cfAVJfi" xid="image5" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/more6.png')}"/>  
+          <div xid="div25" class="text-muted h6 cfAVJfi" __cid="cfAVJfi" data-bind="text:'邀请好友'"/> 
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-card top-trans p6b70aba7cd404238bc4c3dce3001bbf7-iosstatusbar cfAVJfi" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cfAVJfi"> 
+    <div class="x-panel-content x-cards cfAVJfi" xid="content" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfAVJfi"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cfAVJfi" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;swipe&quot;:false,&quot;wrap&quot;:false}" __cid="cfAVJfi"> 
+        <div class="x-contents-content active cfAVJfi" xid="newsContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+          <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full x-has-iosstatusbar p1c8879172bd244dbbb808d7d7dbc1bb9-iosstatusbar cfAVJfi" xid="panel7" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cfAVJfi"> 
+            <div class="x-panel-top cfAVJfi" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&quot;height&quot;:48}" __cid="cfAVJfi"> 
+              <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cfAVJfi" xid="titleBar" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cfAVJfi"> 
+                <div class="x-titlebar-left cfAVJfi" xid="div1" __cid="cfAVJfi"> 
+                  <img src="@justepContextPath@/v_a2e8411ca3b14f799c6694023bd28360l_zh_CNs_d_m/DirectSeeding/main/img/navbar_logo.png" alt="" xid="image3" height="26px" __cid="cfAVJfi" class="cfAVJfi"/> 
+                </div>  
+                <div class="x-titlebar-title cfAVJfi" __cid="cfAVJfi"/>  
+                <div class="x-titlebar-right  cfAVJfi" xid="div3" __cid="cfAVJfi"> 
+                  <div class="empty cfAVJfi" __cid="cfAVJfi"/>  
+                  <a __cid="cfAVJfi" class="cfAVJfi"> 
+                    <img src="@justepContextPath@/v_6ed5ed914ec44993a58453b163de322cl_zh_CNs_d_m/DirectSeeding/main/img/icon24.png" alt="" xid="importantBtn" height="26px" __cid="cfAVJfi" class="cfAVJfi" data-bind="event:{click:$model._callModelFn.bind($model, 'importantBtnClick')}"/> 
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cfAVJfi" xid="moreBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOverMore.show'}" data-config="{&quot;icon&quot;:&quot;icon-android-more&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cfAVJfi"> 
+                    <i xid="i2" class="icon-android-more cfAVJfi" __cid="cfAVJfi"/>  
+                    <span xid="span3" __cid="cfAVJfi" class="cfAVJfi"/> 
+                  </a> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-panel-content cfAVJfi" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfAVJfi"> 
+              <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p3edc2cb7adcd4e9c9eed643ceb4568da-iosstatusbar cfAVJfi" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cfAVJfi"> 
+                <div class="x-panel-top cfAVJfi" xid="navMenuTop" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfAVJfi"> 
+                  <div component="$model/UI2/system/components/justep/row/row" class="x-row x-nav cfAVJfi" xid="row5" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfAVJfi"> 
+                    <div class="x-col cfAVJfi" xid="col15" __cid="cfAVJfi"> 
+                      <div class="x-navbox cfAVJfi" __cid="cfAVJfi"> 
+                        <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group cfAVJfi" xid="buttonGroup2" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cfAVJfi"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label active cfAVJfi" xid="button24" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;头条&quot;,&quot;target&quot;:&quot;navContent1&quot;}" __cid="cfAVJfi"> 
+                            <i xid="i33" __cid="cfAVJfi" class="cfAVJfi"/>  
+                            <span xid="span44" __cid="cfAVJfi" class="cfAVJfi">头条</span> 
+                          </a>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button22" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;娱乐&quot;,&quot;target&quot;:&quot;navContent2&quot;}" __cid="cfAVJfi"> 
+                            <i xid="i34" __cid="cfAVJfi" class="cfAVJfi"/>  
+                            <span xid="span43" __cid="cfAVJfi" class="cfAVJfi">娱乐</span> 
+                          </a>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button20" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;热点&quot;,&quot;target&quot;:&quot;navContent3&quot;}" __cid="cfAVJfi"> 
+                            <i xid="i32" __cid="cfAVJfi" class="cfAVJfi"/>  
+                            <span xid="span41" __cid="cfAVJfi" class="cfAVJfi">热点</span> 
+                          </a>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button21" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;体育&quot;,&quot;target&quot;:&quot;navContent4&quot;}" __cid="cfAVJfi"> 
+                            <i xid="i30" __cid="cfAVJfi" class="cfAVJfi"/>  
+                            <span xid="span42" __cid="cfAVJfi" class="cfAVJfi">体育</span> 
+                          </a>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button23" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;昆明&quot;,&quot;target&quot;:&quot;navContent5&quot;}" __cid="cfAVJfi"> 
+                            <i xid="i31" __cid="cfAVJfi" class="cfAVJfi"/>  
+                            <span xid="span25" __cid="cfAVJfi" class="cfAVJfi">昆明</span> 
+                          </a>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button25" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;财经&quot;,&quot;target&quot;:&quot;navContent6&quot;}" __cid="cfAVJfi"> 
+                            <i xid="i21" __cid="cfAVJfi" class="cfAVJfi"/>  
+                            <span xid="span20" __cid="cfAVJfi" class="cfAVJfi">财经</span> 
+                          </a>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button26" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;科技&quot;,&quot;target&quot;:&quot;navContent7&quot;}" __cid="cfAVJfi"> 
+                            <i xid="i28" __cid="cfAVJfi" class="cfAVJfi"/>  
+                            <span xid="span40" __cid="cfAVJfi" class="cfAVJfi">科技</span> 
+                          </a>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button27" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;图片&quot;,&quot;target&quot;:&quot;navContent8&quot;}" __cid="cfAVJfi"> 
+                            <i xid="i29" __cid="cfAVJfi" class="cfAVJfi"/>  
+                            <span xid="span33" __cid="cfAVJfi" class="cfAVJfi">图片</span> 
+                          </a>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-label cfAVJfi" xid="button28" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;label&quot;:&quot;跟贴&quot;,&quot;target&quot;:&quot;navContent9&quot;}" __cid="cfAVJfi"> 
+                            <i xid="i20" __cid="cfAVJfi" class="cfAVJfi"/>  
+                            <span xid="span32" __cid="cfAVJfi" class="cfAVJfi">跟贴</span> 
+                          </a> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-col x-col-fixed cfAVJfi" xid="col16" __cid="cfAVJfi"> 
+                      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right center-block navMoreBtn cfAVJfi" xid="button19" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'popOver.show'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-down&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cfAVJfi"> 
+                        <i xid="i15" class="text-muted icon-ios7-arrow-down cfAVJfi" __cid="cfAVJfi"/>  
+                        <span xid="span7" __cid="cfAVJfi" class="cfAVJfi"/> 
+                      </a> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="x-panel-content cfAVJfi" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfAVJfi"> 
+                  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cfAVJfi" xid="navContents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;wrap&quot;:false}" __cid="cfAVJfi"> 
+                    <div class="x-contents-content active cfAVJfi" xid="navContent1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'},event:{touchmove:$model._callModelFn.bind($model, 'navContent1Touchmove'),touchstart:$model._callModelFn.bind($model, 'navContent1Touchstart')}" __cid="cfAVJfi"> 
+                      <div class="list-group-item x-seach cfAVJfi" xid="div16" __cid="cfAVJfi"> 
+                        <input component="$model/UI2/system/components/justep/input/input" class="form-control x-inputText cfAVJfi" xid="keyInput" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cfAVJfi"/>  
+                        <span class="glyphicon glyphicon-search form-control-feedback cfAVJfi" aria-hidden="true" xid="span34" __cid="cfAVJfi"/> 
+                      </div>  
+                      <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel x-banner cfAVJfi" xid="carousel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" __cid="cfAVJfi"> 
+                        <ol class="carousel-indicators cfAVJfi" xid="ol1" __cid="cfAVJfi"/>  
+                        <div class="x-contents carousel-inner cfAVJfi" role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="bannerContents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="cfAVJfi"> 
+                          <div class="x-contents-content active cfAVJfi" xid="banner1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+                            <img alt="" xid="image1" id="image1" class="image-wall img1 cfAVJfi" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/1.jpg')}"/>  
+                            <div class="x-title cfAVJfi" xid="div17" __cid="cfAVJfi"> 
+                              <img alt="" class="img_small cfAVJfi" xid="image4" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/icon1.png')}"/>  
+                              <span xid="span35" __cid="cfAVJfi" class="cfAVJfi">一周图片：马来西亚青年躺河里纳凉</span> 
+                            </div> 
+                          </div>  
+                          <div class="x-contents-content cfAVJfi" xid="banner2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+                            <img alt="" xid="image2" id="image2" class="image-wall img1 cfAVJfi" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/2.jpg')}"/>  
+                            <div class="x-title cfAVJfi" xid="div10" __cid="cfAVJfi"> 
+                              <img alt="" class="img_small cfAVJfi" xid="image8" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/icon5.png')}"/>  
+                              <span xid="span22" __cid="cfAVJfi" class="cfAVJfi">福特旗舰座驾金牛座开启预售</span> 
+                            </div> 
+                          </div>  
+                          <div class="x-contents-content cfAVJfi" xid="banner3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+                            <img alt="" xid="image13" id="image13" class="image-wall img1 cfAVJfi" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/3.jpg')}"/>  
+                            <div class="x-title cfAVJfi" xid="div11" __cid="cfAVJfi"> 
+                              <img alt="" class="img_small cfAVJfi" xid="image9" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/icon1.png')}"/>  
+                              <span xid="span23" __cid="cfAVJfi" class="cfAVJfi">俯瞰上海迪士尼在建大城堡露真容</span> 
+                            </div> 
+                          </div>  
+                          <div class="x-contents-content cfAVJfi" xid="banner4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+                            <img alt="" xid="image14" id="image14" class="image-wall img1 cfAVJfi" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/4.jpg')}"/>  
+                            <div class="x-title cfAVJfi" xid="div12" __cid="cfAVJfi"> 
+                              <img alt="" class="img_small cfAVJfi" xid="image10" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/icon1.png')}"/>  
+                              <span xid="span24" __cid="cfAVJfi" class="cfAVJfi">全新迈锐宝驾问世竞猜赢好礼</span> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div>  
+                      <div class="panel panel-default x-card x-wangyi cfAVJfi" component="$model/UI2/system/components/bootstrap/panel/panel" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/bootstrap/panel/panel'}" __cid="cfAVJfi"> 
+                        <div component="$model/UI2/system/components/justep/list/list" class="x-list cfAVJfi" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;newsData&quot;,&quot;limit&quot;:3}" __cid="cfAVJfi"> 
+                          <ul class="x-list-template hide cfAVJfi" xid="listTemplateUl1" __cid="cfAVJfi" data-bind="foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)},event:{click:$model._callModelFn.bind($model, 'detailClick')}"> 
+                            <li xid="li1" class="list-group-item x-flex cfAVJfi" __cid="cfAVJfi"> 
+                              <div xid="div8" class="media-left cfAVJfi" __cid="cfAVJfi"> 
+                                <a xid="a1" __cid="cfAVJfi" class="cfAVJfi"> 
+                                  <img alt="" xid="image4" class="img-responsive img_new cfAVJfi" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl(val('fImg'))}"/> 
+                                </a> 
+                              </div>  
+                              <div class="x-flex1 cfAVJfi" xid="col26" __cid="cfAVJfi"> 
+                                <h5 class="o-nomargintop cfAVJfi" __cid="cfAVJfi" data-bind="text:ref('fTitle')"/>  
+                                <span style="text-align: justify;" class="text-muted cfAVJfi" xid="span36" __cid="cfAVJfi" data-bind="text:ref('fOmit')"/>  
+                                <span class="pull-right cfAVJfi" xid="span37" __cid="cfAVJfi" data-bind="text:ref('fPostNumber')"/> 
+                              </div> 
+                            </li> 
+                          </ul> 
+                        </div>  
+                        <div xid="div18" __cid="cfAVJfi" class="cfAVJfi"> 
+                          <h5 class="panel-heading cfAVJfi" __cid="cfAVJfi">广州女子为追回爱犬贼轧双腿
+                            <span xid="span12" class="pull-right text-muted cfAVJfi" __cid="cfAVJfi">16071跟帖</span> 
+                          </h5>  
+                          <div component="$model/UI2/system/components/bootstrap/row/row" class="row o-nomargin panel cfAVJfi" xid="row1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cfAVJfi"> 
+                            <div class="col col-xs-4 cfAVJfi" xid="col1" __cid="cfAVJfi"> 
+                              <img src="" alt="" xid="image6" class="img-responsive cfAVJfi" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/a3.jpg')}"/> 
+                            </div>  
+                            <div class="col col-xs-4 cfAVJfi" xid="col2" __cid="cfAVJfi"> 
+                              <img src="" alt="" xid="image7" class="img-responsive cfAVJfi" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/a4.jpg')}"/> 
+                            </div>  
+                            <div class="col col-xs-4 cfAVJfi" xid="col3" __cid="cfAVJfi"> 
+                              <img src="" alt="" xid="image11" class="img-responsive cfAVJfi" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl('./main/img/a5.jpg')}"/> 
+                            </div> 
+                          </div> 
+                        </div>  
+                        <div component="$model/UI2/system/components/justep/list/list" class="x-list cfAVJfi" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;newsData&quot;,&quot;limit&quot;:3}" __cid="cfAVJfi"> 
+                          <ul class="x-list-template hide cfAVJfi" xid="listTemplateUl1" __cid="cfAVJfi" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)},event:{click:$model._callModelFn.bind($model, 'detailClick')}"> 
+                            <li xid="li1" class="list-group-item x-flex cfAVJfi" __cid="cfAVJfi"> 
+                              <div xid="div8" class="media-left cfAVJfi" __cid="cfAVJfi"> 
+                                <a xid="a1" __cid="cfAVJfi" class="cfAVJfi"> 
+                                  <img alt="" xid="image4" class="img-responsive img_new cfAVJfi" __cid="cfAVJfi" data-bind="attr:{src:$model.getImageUrl(val('fImg'))}"/> 
+                                </a> 
+                              </div>  
+                              <div class="x-flex1 cfAVJfi" xid="col26" __cid="cfAVJfi"> 
+                                <h5 class="o-nomargintop cfAVJfi" __cid="cfAVJfi" data-bind="text:ref('fTitle')"/>  
+                                <span style="text-align: justify;" class="text-muted cfAVJfi" xid="span38" __cid="cfAVJfi" data-bind="text:ref('fOmit')"/>  
+                                <span class="pull-right cfAVJfi" xid="span39" __cid="cfAVJfi" data-bind="text:ref('fPostNumber')"/> 
+                              </div> 
+                            </li> 
+                          </ul> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div class="x-contents-content cfAVJfi" xid="navContent2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+                      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cfAVJfi" xid="navContainer2" style="height:100%;width:100%;" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true}" __cid="cfAVJfi"/> 
+                    </div>  
+                    <div class="x-contents-content cfAVJfi" xid="navContent3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+                      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cfAVJfi" xid="navContainer3" style="height:100%;width:100%;" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true}" __cid="cfAVJfi"/> 
+                    </div>  
+                    <div class="x-contents-content cfAVJfi" xid="navContent4" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+                      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cfAVJfi" xid="navContainer4" style="height:100%;width:100%;" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true}" __cid="cfAVJfi"/> 
+                    </div>  
+                    <div class="x-contents-content cfAVJfi" xid="navContent5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+                      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cfAVJfi" xid="navContainer5" style="height:100%;width:100%;" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true}" __cid="cfAVJfi"/> 
+                    </div>  
+                    <div class="x-contents-content cfAVJfi" xid="navContent6" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+                      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cfAVJfi" xid="navContainer6" style="height:100%;width:100%;" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true}" __cid="cfAVJfi"/> 
+                    </div>  
+                    <div class="x-contents-content cfAVJfi" xid="navContent7" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+                      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cfAVJfi" xid="navContainer7" style="height:100%;width:100%;" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true}" __cid="cfAVJfi"/> 
+                    </div>  
+                    <div class="x-contents-content cfAVJfi" xid="navContent8" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+                      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cfAVJfi" xid="navContainer8" style="height:100%;width:100%;" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true}" __cid="cfAVJfi"/> 
+                    </div>  
+                    <div class="x-contents-content cfAVJfi" xid="navContent9" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+                      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cfAVJfi" xid="navContainer9" style="height:100%;width:100%;" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true}" __cid="cfAVJfi"/> 
+                    </div> 
+                  </div> 
+                </div>  
+                <style __cid="cfAVJfi" class="cfAVJfi">.x-panel.p3edc2cb7adcd4e9c9eed643ceb4568da-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p3edc2cb7adcd4e9c9eed643ceb4568da-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p3edc2cb7adcd4e9c9eed643ceb4568da-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p3edc2cb7adcd4e9c9eed643ceb4568da-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p3edc2cb7adcd4e9c9eed643ceb4568da-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p3edc2cb7adcd4e9c9eed643ceb4568da-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p3edc2cb7adcd4e9c9eed643ceb4568da-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p3edc2cb7adcd4e9c9eed643ceb4568da-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p3edc2cb7adcd4e9c9eed643ceb4568da-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+              </div> 
+            </div>  
+            <style __cid="cfAVJfi" class="cfAVJfi">.x-panel.p1c8879172bd244dbbb808d7d7dbc1bb9-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p1c8879172bd244dbbb808d7d7dbc1bb9-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.p1c8879172bd244dbbb808d7d7dbc1bb9-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p1c8879172bd244dbbb808d7d7dbc1bb9-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p1c8879172bd244dbbb808d7d7dbc1bb9-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p1c8879172bd244dbbb808d7d7dbc1bb9-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p1c8879172bd244dbbb808d7d7dbc1bb9-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p1c8879172bd244dbbb808d7d7dbc1bb9-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p1c8879172bd244dbbb808d7d7dbc1bb9-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+          </div> 
+        </div>  
+        <div class="x-contents-content cfAVJfi" xid="readContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cfAVJfi" xid="readContainer" style="height:100%;width:100%;" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true}" __cid="cfAVJfi"/> 
+        </div>  
+        <div class="x-contents-content cfAVJfi" xid="audioContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cfAVJfi" xid="audioContainer" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true}" __cid="cfAVJfi"/> 
+        </div>  
+        <div class="x-contents-content cfAVJfi" xid="foundContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cfAVJfi" xid="foundContainer" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true}" __cid="cfAVJfi"/> 
+        </div>  
+        <div class="x-contents-content cfAVJfi" xid="userContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cfAVJfi"> 
+          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cfAVJfi" xid="userContainer" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:true}" __cid="cfAVJfi"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cfAVJfi" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfAVJfi"> 
+      <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group btn-group-justified x-card x-wangyi cfAVJfi" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cfAVJfi"> 
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top active cfAVJfi" xid="newsBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-note&quot;,&quot;label&quot;:&quot;新闻&quot;,&quot;target&quot;:&quot;newsContent&quot;}" __cid="cfAVJfi"> 
+          <i xid="i4" class="icon icon-android-note cfAVJfi" __cid="cfAVJfi"/>  
+          <span xid="span6" __cid="cfAVJfi" class="cfAVJfi">新闻</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cfAVJfi" xid="readBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-bookmarks-outline&quot;,&quot;label&quot;:&quot;阅读&quot;,&quot;target&quot;:&quot;readContent&quot;}" __cid="cfAVJfi"> 
+          <i xid="i3" class="icon icon-ios7-bookmarks-outline cfAVJfi" __cid="cfAVJfi"/>  
+          <span xid="span5" __cid="cfAVJfi" class="cfAVJfi">阅读</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cfAVJfi" xid="audioBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-arrow-right-b&quot;,&quot;label&quot;:&quot;视听&quot;,&quot;target&quot;:&quot;audioContent&quot;}" __cid="cfAVJfi"> 
+          <i xid="i5" class="icon icon-arrow-right-b cfAVJfi" __cid="cfAVJfi"/>  
+          <span xid="span4" __cid="cfAVJfi" class="cfAVJfi">视听</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cfAVJfi" xid="foundBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-locate&quot;,&quot;label&quot;:&quot;发现&quot;,&quot;target&quot;:&quot;foundContent&quot;}" __cid="cfAVJfi"> 
+          <i xid="i3" class="icon icon-android-locate cfAVJfi" __cid="cfAVJfi"/>  
+          <span xid="span4" __cid="cfAVJfi" class="cfAVJfi">发现</span> 
+        </a>  
+        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cfAVJfi" xid="userBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-contact-outline&quot;,&quot;label&quot;:&quot;我的&quot;,&quot;target&quot;:&quot;userContent&quot;}" __cid="cfAVJfi"> 
+          <i xid="i6" class="icon icon-ios7-contact-outline cfAVJfi" __cid="cfAVJfi"/>  
+          <span xid="span71" __cid="cfAVJfi" class="cfAVJfi">我的</span> 
+        </a> 
+      </div> 
+    </div>  
+    <style __cid="cfAVJfi" class="cfAVJfi">.x-panel.p6b70aba7cd404238bc4c3dce3001bbf7-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.p6b70aba7cd404238bc4c3dce3001bbf7-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.p6b70aba7cd404238bc4c3dce3001bbf7-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.p6b70aba7cd404238bc4c3dce3001bbf7-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p6b70aba7cd404238bc4c3dce3001bbf7-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.p6b70aba7cd404238bc4c3dce3001bbf7-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p6b70aba7cd404238bc4c3dce3001bbf7-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p6b70aba7cd404238bc4c3dce3001bbf7-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p6b70aba7cd404238bc4c3dce3001bbf7-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+  </div> 
+</div>

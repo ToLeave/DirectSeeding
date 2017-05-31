@@ -1,0 +1,40 @@
+.x-list-padding{
+	padding-left:70px;
+	padding-right:10px;
+}
+.timeline{
+	position:relative;
+}
+.x-panel-content::before{
+	content: '';
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    width: 2px;
+    background: #afdcf8;
+    left: 70px;
+}
+.time{
+	position:absolute;
+	left:-65px;
+	top:10px;
+}
+.timeline-image{
+	position:absolute;
+	height:10px;
+	width:10px;
+	left:-5px;
+	top:15px;
+	border-radius:50%;
+	z-index:100;
+}
+.timeline-content{
+	position:relative;
+	border:1px solid #E8E8E8;
+	border-left:0;
+	padding-left:15px;
+}
+
+.x-output{
+   text-align:center;
+}
