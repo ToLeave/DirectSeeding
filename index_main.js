@@ -107,15 +107,7 @@ var row = event.bindingContext.$object;
 //			});
 
 
-
-
 	};
-
-
-
-
-
-
 
 
 	Model.prototype.button11Click = function(event){
