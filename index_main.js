@@ -44,6 +44,7 @@ define(function(require){
 			});
 
 	};
+	
 //	Model.prototype.bookCityBtnClick = function(event){
 //   justep.Shell.showPage("news");
 //

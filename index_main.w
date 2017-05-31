@@ -129,14 +129,14 @@
      <span xid="span25"><![CDATA[意见反馈]]></span></div> </div> </div></div> </div></div>
    <div class="x-panel-bottom" xid="bottom1" height="54"><div component="$UI/system/components/justep/row/row" class="x-row text-center" xid="row1">
    <div class="x-col" xid="col1">
-    <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top" label="首页" xid="columnBtn" icon="linear linear-envelope" target="columnContent">
+    <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-sm btn-icon-top" label="首页" xid="columnBtn" icon="linear linear-envelope" target="columnContent">
      <i xid="i5" class="linear linear-envelope"></i>
      <span xid="span7">首页</span></a> </div> 
    <div class="x-col" xid="col2">
-    <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top" label="消息" xid="newBtn" icon="round round-safari" target="newContent">
+    <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-sm btn-icon-top" label="消息" xid="newBtn" icon="round round-safari" target="newContent">
      <i xid="i6" class="round round-safari"></i>
      <span xid="span8">消息</span></a> </div> 
    <div class="x-col" xid="col3">
-    <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top" label="个人中心" xid="userBtn" icon="icon-android-contact" target="userContent">
+    <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-sm btn-icon-top" label="个人中心" xid="userBtn" icon="icon-android-contact" target="userContent">
      <i xid="i7" class="icon-android-contact"></i>
      <span xid="span9">个人中心</span></a> </div> </div></div></div></div>
