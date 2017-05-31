@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cjIbemi" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjIbemi" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cjIbemi" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cjIbemi" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
   <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cjIbemi" class="cjIbemi"/>  
-  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p99d5308db21a41ccb2fb1703e8be01cc-iosstatusbar cjIbemi" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjIbemi"> 
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full p65ccd69aa98749ab862d13461205a9a5-iosstatusbar cjIbemi" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjIbemi"> 
     <div class="x-panel-top cjIbemi" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cjIbemi"> 
       <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cjIbemi" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cjIbemi"> 
         <div class="x-titlebar-left cjIbemi" xid="left1" __cid="cjIbemi"/>  
@@ -32,8 +32,8 @@
                 <h5 class="panel-heading cjIbemi" xid="h52" __cid="cjIbemi">直播专栏</h5> 
               </div>  
               <div component="$model/UI2/system/components/justep/list/list" class="x-list cjIbemi" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;zhuanlanData&quot;}" __cid="cjIbemi"> 
-                <ul class="x-list-template hide cjIbemi" xid="listTemplateUl1" __cid="cjIbemi" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)},event:{click:$model._callModelFn.bind($model, 'detailClick')}"> 
-                  <li xid="li1" class="list-group-item x-flex cjIbemi" __cid="cjIbemi"> 
+                <ul class="x-list-template hide cjIbemi" xid="listTemplateUl1" __cid="cjIbemi" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+                  <li xid="li1" class="list-group-item x-flex cjIbemi" __cid="cjIbemi" data-bind="event:{click:$model._callModelFn.bind($model, 'detailClick')}"> 
                     <div xid="mediaLeft1" class="media-left cjIbemi" __cid="cjIbemi"> 
                       <a xid="a1" __cid="cjIbemi" class="cjIbemi"> 
                         <img alt="" xid="image4" class="img-responsive img_new cjIbemi" style="width:50px;" height="50px" __cid="cjIbemi" data-bind="attr:{src:$model.getimgurl(&quot;images&quot;,  val(&quot;id&quot;),  val(&quot;img&quot;))}"/> 
@@ -53,11 +53,110 @@
             </div> 
           </div> 
         </div>  
-        <div class="x-contents-content cjIbemi" xid="newContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cjIbemi"> 
-          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cjIbemi" xid="mainContainer2" style="height:100%;width:100%;" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/DirectSeeding/news.w&quot;}" __cid="cjIbemi"/> 
+        <div class="x-contents-content  x-scroll-view cjIbemi" xid="newContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cjIbemi"> 
+          <div class="x-scroll cjIbemi" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;hScroll&quot;:false}" __cid="cjIbemi"> 
+            <div class="x-content-center x-pull-down container cjIbemi" xid="div3" __cid="cjIbemi"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cjIbemi" xid="i4" __cid="cjIbemi"/>  
+              <span class="x-pull-down-label cjIbemi" xid="span6" __cid="cjIbemi">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cjIbemi" xid="div4" __cid="cjIbemi"> 
+              <div xid="div11" style="border-bottom:#ccc 1px solid;" __cid="cjIbemi" class="cjIbemi"/>  
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cjIbemi" xid="list4" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;newData&quot;}" __cid="cjIbemi"> 
+                <ul class="x-list-template hide cjIbemi" xid="listTemplateUl4" __cid="cjIbemi" data-bind="foreach:{data:$model.foreach_list4($element),afterRender:$model.foreach_afterRender_list4.bind($model,$element)}"> 
+                  <li xid="li3" __cid="cjIbemi" class="cjIbemi"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cjIbemi" xid="row4" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cjIbemi"> 
+                      <div class="x-col x-col-20 cjIbemi" xid="col5" __cid="cjIbemi"> 
+                        <img src="@justepContextPath@/v_f875dd1fa8364ffa89fbd60187e68cc1l_zh_CNs_d_m/DirectSeeding/img/消息头像.jpg" alt="" xid="image1" style="width:60%;" class="center-block cjIbemi" __cid="cjIbemi"/> 
+                      </div>  
+                      <div class="x-col cjIbemi" xid="col12" __cid="cjIbemi"> 
+                        <label xid="label1" __cid="cjIbemi" class="cjIbemi" data-bind="text:val(&quot;time&quot;)"/>  
+                        <label xid="label2" __cid="cjIbemi" class="cjIbemi" data-bind="text:val(&quot;title&quot;)"/>  
+                        <div xid="div1" __cid="cjIbemi" class="cjIbemi" data-bind="text:val(&quot;content&quot;)"/> 
+                      </div> 
+                    </div>  
+                    <div xid="div10" style="border-bottom:#ccc 1px solid;" __cid="cjIbemi" class="cjIbemi"/> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cjIbemi" xid="div5" __cid="cjIbemi"> 
+              <span class="x-pull-up-label cjIbemi" xid="span3" __cid="cjIbemi">加载更多...</span> 
+            </div> 
+          </div> 
         </div>  
         <div class="x-contents-content cjIbemi" xid="userContent" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cjIbemi"> 
-          <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cjIbemi" xid="mainContainer5" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;autoLoad&quot;:false,&quot;src&quot;:&quot;$model/UI2/DirectSeeding/index-user.w&quot;}" __cid="cjIbemi"/> 
+          <div class="x-panel-content cjIbemi" xid="content1" __cid="cjIbemi"> 
+            <div class="text-center o-user cjIbemi" xid="div13" __cid="cjIbemi"> 
+              <img alt="" xid="image2" class="img1 cjIbemi" __cid="cjIbemi"/>  
+              <div xid="div9" class="h5 text-white cjIbemi" __cid="cjIbemi"/> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pdda6fc5a827d470dbb28dfe1058f280b-iosstatusbar cjIbemi" xid="panel3" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjIbemi"> 
+              <div class="list-group-item cjIbemi" xid="div14" __cid="cjIbemi"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cjIbemi" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button11Click" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cjIbemi"> 
+                  <i xid="i17" class="icon-ios7-arrow-right text-muted cjIbemi" __cid="cjIbemi"/>  
+                  <span xid="span14" __cid="cjIbemi" class="cjIbemi"/> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cjIbemi" xid="button2" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-chatbox-working&quot;}" __cid="cjIbemi"> 
+                  <i xid="i9" class="icon-chatbox-working text-danger cjIbemi" __cid="cjIbemi"/>  
+                  <span xid="span13" __cid="cjIbemi" class="cjIbemi"/> 
+                </a>  
+                <span xid="span15" __cid="cjIbemi" class="cjIbemi">个人信息</span> 
+              </div>  
+              <style __cid="cjIbemi" class="cjIbemi">.x-panel.pdda6fc5a827d470dbb28dfe1058f280b-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pdda6fc5a827d470dbb28dfe1058f280b-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pdda6fc5a827d470dbb28dfe1058f280b-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pdda6fc5a827d470dbb28dfe1058f280b-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pdda6fc5a827d470dbb28dfe1058f280b-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pdda6fc5a827d470dbb28dfe1058f280b-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pdda6fc5a827d470dbb28dfe1058f280b-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pdda6fc5a827d470dbb28dfe1058f280b-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pdda6fc5a827d470dbb28dfe1058f280b-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pc31b7fa109ef43af918ff1409ea86788-iosstatusbar cjIbemi" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjIbemi"> 
+              <ul xid="ul1" __cid="cjIbemi" class="cjIbemi"> 
+                <li class="list-group-item cjIbemi" xid="li2" __cid="cjIbemi"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cjIbemi" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cjIbemi"> 
+                    <i xid="i18" class="icon-ios7-arrow-right text-muted cjIbemi" __cid="cjIbemi"/>  
+                    <span xid="span17" __cid="cjIbemi" class="cjIbemi"/> 
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cjIbemi" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-bag&quot;}" __cid="cjIbemi"> 
+                    <i xid="i26" class="icon-bag text-warning cjIbemi" __cid="cjIbemi"/>  
+                    <span xid="span18" __cid="cjIbemi" class="cjIbemi"/> 
+                  </a>  
+                  <span xid="span16" __cid="cjIbemi" class="cjIbemi">我的活动</span> 
+                </li>  
+                <li class="list-group-item cjIbemi" xid="li2" __cid="cjIbemi"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cjIbemi" xid="button14" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cjIbemi"> 
+                    <i xid="i27" class="icon-ios7-arrow-right text-muted cjIbemi" __cid="cjIbemi"/>  
+                    <span xid="span20" __cid="cjIbemi" class="cjIbemi"/> 
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cjIbemi" xid="button15" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-clipboard&quot;}" __cid="cjIbemi"> 
+                    <i xid="i28" class="icon-clipboard cjIbemi" __cid="cjIbemi"/>  
+                    <span xid="span21" __cid="cjIbemi" class="cjIbemi"/> 
+                  </a>  
+                  <span xid="span19" __cid="cjIbemi" class="cjIbemi">购买记录</span> 
+                </li>  
+                <li class="list-group-item cjIbemi" xid="li2" __cid="cjIbemi"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cjIbemi" xid="button16" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cjIbemi"> 
+                    <i xid="i29" class="icon-ios7-arrow-right text-muted cjIbemi" __cid="cjIbemi"/>  
+                    <span xid="span23" __cid="cjIbemi" class="cjIbemi"/> 
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cjIbemi" xid="button17" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-briefcase-outline&quot;}" __cid="cjIbemi"> 
+                    <i xid="i30" class="icon-ios7-briefcase-outline text-danger cjIbemi" __cid="cjIbemi"/>  
+                    <span xid="span24" __cid="cjIbemi" class="cjIbemi"/> 
+                  </a>  
+                  <span xid="span22" __cid="cjIbemi" class="cjIbemi">赠送记录</span> 
+                </li> 
+              </ul>  
+              <style __cid="cjIbemi" class="cjIbemi">.x-panel.pc31b7fa109ef43af918ff1409ea86788-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pc31b7fa109ef43af918ff1409ea86788-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pc31b7fa109ef43af918ff1409ea86788-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc31b7fa109ef43af918ff1409ea86788-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc31b7fa109ef43af918ff1409ea86788-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pc31b7fa109ef43af918ff1409ea86788-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc31b7fa109ef43af918ff1409ea86788-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc31b7fa109ef43af918ff1409ea86788-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc31b7fa109ef43af918ff1409ea86788-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/panel/panel" class="panel panel-default x-card pe0b61660e41e4dc89f4ff779aee9a97d-iosstatusbar cjIbemi" xid="panel5" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cjIbemi"> 
+              <div class="list-group-item cjIbemi" xid="div2" __cid="cjIbemi"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cjIbemi" xid="button18" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cjIbemi"> 
+                  <i xid="i31" class="icon-ios7-arrow-right text-muted cjIbemi" __cid="cjIbemi"/>  
+                  <span xid="span26" __cid="cjIbemi" class="cjIbemi"/> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cjIbemi" xid="button19" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-email&quot;}" __cid="cjIbemi"> 
+                  <i xid="i32" class="icon-email text-success cjIbemi" __cid="cjIbemi"/>  
+                  <span xid="span27" __cid="cjIbemi" class="cjIbemi"/> 
+                </a>  
+                <span xid="span25" __cid="cjIbemi" class="cjIbemi">意见反馈</span> 
+              </div>  
+              <style __cid="cjIbemi" class="cjIbemi">.x-panel.pe0b61660e41e4dc89f4ff779aee9a97d-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pe0b61660e41e4dc89f4ff779aee9a97d-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pe0b61660e41e4dc89f4ff779aee9a97d-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pe0b61660e41e4dc89f4ff779aee9a97d-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pe0b61660e41e4dc89f4ff779aee9a97d-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pe0b61660e41e4dc89f4ff779aee9a97d-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pe0b61660e41e4dc89f4ff779aee9a97d-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pe0b61660e41e4dc89f4ff779aee9a97d-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pe0b61660e41e4dc89f4ff779aee9a97d-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+            </div> 
+          </div> 
         </div> 
       </div> 
     </div>  
@@ -83,6 +182,6 @@
         </div> 
       </div> 
     </div>  
-    <style __cid="cjIbemi" class="cjIbemi">.x-panel.p99d5308db21a41ccb2fb1703e8be01cc-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p99d5308db21a41ccb2fb1703e8be01cc-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: 54px;}.x-panel.p99d5308db21a41ccb2fb1703e8be01cc-iosstatusbar &gt;.x-panel-bottom {height: 54px;}.iosstatusbar .x-panel.p99d5308db21a41ccb2fb1703e8be01cc-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p99d5308db21a41ccb2fb1703e8be01cc-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p99d5308db21a41ccb2fb1703e8be01cc-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p99d5308db21a41ccb2fb1703e8be01cc-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p99d5308db21a41ccb2fb1703e8be01cc-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p99d5308db21a41ccb2fb1703e8be01cc-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+    <style __cid="cjIbemi" class="cjIbemi">.x-panel.p65ccd69aa98749ab862d13461205a9a5-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.p65ccd69aa98749ab862d13461205a9a5-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: 54px;}.x-panel.p65ccd69aa98749ab862d13461205a9a5-iosstatusbar &gt;.x-panel-bottom {height: 54px;}.iosstatusbar .x-panel.p65ccd69aa98749ab862d13461205a9a5-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p65ccd69aa98749ab862d13461205a9a5-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.p65ccd69aa98749ab862d13461205a9a5-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.p65ccd69aa98749ab862d13461205a9a5-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p65ccd69aa98749ab862d13461205a9a5-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.p65ccd69aa98749ab862d13461205a9a5-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
   </div> 
 </div>
