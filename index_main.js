@@ -1,7 +1,7 @@
 define(function(require){
 	var $ = require("jquery");
 	var justep = require("$UI/system/lib/justep");
-	var url = "http://192.168.17.100:9292"
+	var url = "http://192.168.17.103:9292"
 	
 	var Model = function(){
 		this.callParent();
@@ -28,7 +28,7 @@ define(function(require){
 
 			for(var i=0;i<xhr.length;i++)
 			{
-
+//alert(xhr[i].id)
 			zhuanlandata.add({
 			id:xhr[i].id,
 			title:xhr[i].title,
@@ -49,6 +49,67 @@ define(function(require){
 //
 //
 //	};
+
+	Model.prototype.newDataCustomRefresh = function(event){
+var newData=this.comp("newData")
+		newData.clear();
+       $.ajax({
+			"type" : "post",
+			"dataType" : "jsonp",
+			"async" : false,
+			
+			"url" : url+"/mobiles/information?",
+			"newData" : {
+				"action" : "",
+			},
+			"success": function(xhr) {
+
+			for(var i=0;i<xhr.length;i++)
+			{
+
+			newData.add({
+			id:xhr[i].id,
+			title:xhr[i].title,
+			content:xhr[i].content,
+			time:xhr[i].created_at.substring(0,10),
+		//	image:"./img/用户头像.jpg"
+
+			});
+			
+			}
+			
+			}
+			});
+
+
+	};
+
+
+	Model.prototype.detailClick = function(event){
+
+var row = event.bindingContext.$object;
+//alert(row.val('id'))
+// $.ajax({
+//			"type" : "post",
+//			"dataType" : "jsonp",
+//			"async" : false,
+//			
+//			"url" : url+"/mobiles/buy?userid=1&zhuanlanid="+row.val('id'),
+//			"newData" : {
+//				"action" : "",
+//			},
+//			"success": function(xhr) {
+//			if(xhr[0].status==1)
+//			{
+//			alert("订阅成功！！")
+//			}
+//			}
+//			});
+
+
+
+
+	};
 
 
 
