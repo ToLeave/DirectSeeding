@@ -4,13 +4,13 @@
   <div component="$UI/system/components/justep/model/model" xid="model" style="top:292px;left:338px;height:auto;"/> 
 <div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1">
    <div class="x-titlebar-left" xid="left1"></div>
-   <div class="x-titlebar-title" xid="title1"><span xid="span1"><![CDATA[个人信息]]></span></div>
+   <div class="x-titlebar-title" xid="title1" bind-text="个人信息"><span xid="span1"><![CDATA[个人信息]]></span></div>
    <div class="x-titlebar-right reverse" xid="right1"></div></div>
   <div component="$UI/system/components/justep/panel/panel" class="panel panel-default x-card x-has-iosstatusbar" xid="panel1">
    
    
    <ul class="list-group x-tuniu" xid="ul1">
-    <li class="list-group-item" xid="li1">我的小金库
+    <li class="list-group-item" xid="li1">头像
      <span class="pull-right text-muted" xid="span2" style="width:40px;height:26px;"><![CDATA[]]>
   <img alt="" xid="image2" class="img1" src="$UI/DirectSeeding/img/消息头像.jpg"></img></span> 
      </li> 
