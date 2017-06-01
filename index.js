@@ -20,6 +20,10 @@ var Model = function() {
 					"userinformation" : {
 					url : require.toUrl('./userinformation.w')
 				},
+					
+					"subscription" : {
+					url : require.toUrl('./subscription.w')
+				},
 //				"post" : {
 //					url : require.toUrl('./post.w')
 //				},
