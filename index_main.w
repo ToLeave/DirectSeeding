@@ -61,7 +61,8 @@
        <div class="x-flex1" xid="col26">
         <h5 class="o-nomargintop" xid="h51" bind-text='ref("title")'></h5>
         <span style="text-align: justify;" bind-text='ref("remark")' class="text-muted" xid="span36"></span>
-        <span class="pull-right" xid="span37" bind-text='ref("price")'></span></div> </li> </ul> </div> </div> 
+        <span class="pull-right text-danger" xid="span4" bind-text='ref("price")'><![CDATA[]]></span><span class="pull-right text-danger" xid="span37"><![CDATA[￥]]></span>
+  </div> </li> </ul> </div> </div> 
    <div class="x-content-center x-pull-up" xid="div8">
     <span class="x-pull-up-label" xid="span10">加载更多...</span></div> </div></div> 
    <div class="x-contents-content  x-scroll-view" xid="newContent">

@@ -87,6 +87,7 @@ var newData=this.comp("newData")
 
 	Model.prototype.detailClick = function(event){
 
+
 var row = event.bindingContext.$object;
 		
 		justep.Shell.showPage("subscription", {
@@ -122,9 +123,6 @@ var row = event.bindingContext.$object;
 	Model.prototype.panel3Click = function(event){
 justep.Shell.showPage("userinformation")
 	};
-
-
-
 
 
 	return Model;
