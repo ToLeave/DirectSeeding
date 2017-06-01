@@ -2,7 +2,7 @@
 
 <div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$UI/system/components/justep/window/window" design="device:m;">  
   <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;left:312px;top:368px;">
-  <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="userData"></div><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="zhuanlanData" idColumn="id" onCustomRefresh="zhuanlanDataCustomRefresh">
+  <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="zhuanlanData" idColumn="id" onCustomRefresh="zhuanlanDataCustomRefresh">
    <column label="id" name="id" type="String" xid="xid1"></column>
   <column label="标题" name="title" type="String" xid="xid2"></column>
   <column label="图片" name="img" type="String" xid="xid3"></column>
@@ -19,7 +19,18 @@
    <column label="时间" name="time" type="String" xid="column3"></column>
    <column label="追加评论" name="addReply" type="String" xid="column4"></column>
    <column label="用户头像" name="image" type="String" xid="xid6"></column>
-   <data xid="default2">[]</data></div></div> 
+   <data xid="default2">[]</data></div>
+  <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="userData" idColumn="id">
+   <column label="id" name="id" type="String" xid="default3"></column>
+   <column label="昵称" name="nicheng" type="String" xid="default4"></column>
+   <column label="头像" name="touxiang" type="String" xid="default5"></column>
+   <column label="性别" name="xingbie" type="String" xid="default6"></column>
+   <column label="生日" name="shengri" type="String" xid="default7"></column>
+   <column label="真实姓名" name="name" type="String" xid="default8"></column>
+   <column label="手机号" name="shouji" type="String" xid="xid7"></column>
+   <column label="地址" name="dizhi" type="String" xid="xid8"></column>
+   <column label="公司" name="gongsi" type="String" xid="xid9"></column>
+   <column label="职位" name="zhiwei" type="String" xid="default9"></column></div></div> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
    <div class="x-panel-top" xid="top1"><div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1">
    <div class="x-titlebar-left" xid="left1"></div>
@@ -42,7 +53,7 @@
     <div xid="div18">
      <h5 class="panel-heading" xid="h52">直播专栏</h5></div> 
     <div component="$UI/system/components/justep/list/list" class="x-list" xid="list2" data="zhuanlanData">
-     <ul class="x-list-template" xid="listTemplateUl1">
+     <ul class="x-list-template" xid="listTemplateUl1" bind-click="listTemplateUl1Click">
       <li xid="li1" class="list-group-item x-flex" bind-click="detailClick">
        <div xid="mediaLeft1" class="media-left">
         <a xid="a1">
@@ -83,9 +94,9 @@
     
     <div xid="div9" class="h5 text-white"></div></div> 
    
-   <div component="$UI/system/components/justep/panel/panel" class="panel panel-default x-card" xid="panel3">
+   <div component="$UI/system/components/justep/panel/panel" class="panel panel-default x-card" xid="panel3" bind-click="panel3Click">
     <div class="list-group-item" xid="div14">
-     <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right" label="button" xid="button11" icon="icon-ios7-arrow-right" onClick="button11Click">
+     <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right" label="button" xid="button11" icon="icon-ios7-arrow-right">
       <i xid="i17" class="icon-ios7-arrow-right text-muted"></i>
       <span xid="span14"></span></a> 
      <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" icon="icon-chatbox-working" xid="button2">

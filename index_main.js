@@ -110,8 +110,13 @@ var row = event.bindingContext.$object;
 	};
 
 
-	Model.prototype.button11Click = function(event){
+	Model.prototype.panel3Click = function(event){
+justep.Shell.showPage("userinformation")
+	};
 
+
+
+	Model.prototype.listTemplateUl1Click = function(event){
 justep.Shell.showPage("userinformation")
 	};
 
