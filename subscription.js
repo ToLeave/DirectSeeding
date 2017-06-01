@@ -6,5 +6,14 @@ define(function(require){
 		this.callParent();
 	};
 
+	//图片路径转换
+	Model.prototype.getImageUrl = function(url){
+		return require.toUrl(url);
+	};
+
+	Model.prototype.zhuanlanDataCustomRefresh = function(event){
+
+	};
+
 	return Model;
 });

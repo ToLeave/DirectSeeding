@@ -128,7 +128,7 @@
       <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" icon="icon-ios7-briefcase-outline" xid="button17">
        <i xid="i30" class="icon-ios7-briefcase-outline text-danger"></i>
        <span xid="span24"></span></a> 
-      <span xid="span22"><![CDATA[赠送记录]]></span></li> </ul> </div> 
+      <span xid="span22"><![CDATA[联系我们]]></span></li> </ul> </div> 
    <div component="$UI/system/components/justep/panel/panel" class="panel panel-default x-card" xid="panel5">
     <div class="list-group-item" xid="div2">
      <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right" label="button" xid="button18" icon="icon-ios7-arrow-right">
