@@ -1,7 +1,7 @@
 define(function(require){
 	var $ = require("jquery");
 	var justep = require("$UI/system/lib/justep");
-	var url = "http://192.168.17.100:9292"
+	var url = "http://192.168.17.103:9292";
 	var Model = function(){
 		this.callParent();
 	};
@@ -9,7 +9,7 @@ define(function(require){
 	Model.prototype.timeDataCustomRefresh = function(event){
 //		var url = require.toUrl("./json/time.json");
 //		allData.loadDataFromFile(url, event.source, true);
-		var timedata=this.comp("timeData")
+		var timedata=this.comp("timeData");
 		timedata.clear();
        $.ajax({
 			"type" : "post",
@@ -90,24 +90,26 @@ define(function(require){
 		}
 
 	};
-
-	Model.prototype.timer1Timer = function(event){
-var timedata=this.comp("timeData")
-timedata.refreshData();
-	};
 	
-//	var s = 60, t;
-//function times(){
-// s--;
-//document.form.time.value = s;
-//t = setTimeout('times', 1000);
-//if ( s <= 0 ){
-// s = 60;
-// clearTimeout(t);
-//}
-//}
-// 
-//times();
+ 
+
+
+
+	Model.prototype.modelLoad = function(event){
+var timer =60;
+function Countdown() {
+    if (timer >= 1) {
+        timer -= 1;
+        setTimeout(function() {
+            Countdown();
+        }, 1000);
+        $('.span4').text(timer);
+                
+    }
+}
+setInterval(Countdown(),1000);
+Countdown();
+	};
 
 
 
