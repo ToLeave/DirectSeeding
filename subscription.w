@@ -41,6 +41,8 @@
    
    </div>
   <div class="x-panel-bottom" xid="bottom1">
+
   <button xid="button2" style="height:100%;width:100%;" class="btn btn-default"><![CDATA[]]><span xid="span1"><![CDATA[订阅专栏：￥]]></span><span xid="span2" bind-text='$model.zhuanlanData.ref("price")'></span></button>
+
   </div></div> 
 </div>
