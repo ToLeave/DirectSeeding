@@ -88,6 +88,15 @@ var newData=this.comp("newData")
 	Model.prototype.detailClick = function(event){
 
 var row = event.bindingContext.$object;
+		
+		justep.Shell.showPage("subscription", {
+			zhuanlanid :row.val("id"),
+			title :row.val("title"),
+			img :row.val("img"),
+			remark :row.val("remark"),
+			price :row.val("price")
+		});
+
 //alert(row.val('id'))
 // $.ajax({
 //			"type" : "post",
@@ -115,10 +124,6 @@ justep.Shell.showPage("userinformation")
 	};
 
 
-
-	Model.prototype.listTemplateUl1Click = function(event){
-justep.Shell.showPage("userinformation")
-	};
 
 
 

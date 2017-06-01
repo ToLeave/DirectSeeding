@@ -53,7 +53,7 @@
     <div xid="div18">
      <h5 class="panel-heading" xid="h52">直播专栏</h5></div> 
     <div component="$UI/system/components/justep/list/list" class="x-list" xid="list2" data="zhuanlanData">
-     <ul class="x-list-template" xid="listTemplateUl1" bind-click="listTemplateUl1Click">
+     <ul class="x-list-template" xid="listTemplateUl1">
       <li xid="li1" class="list-group-item x-flex" bind-click="detailClick">
        <div xid="mediaLeft1" class="media-left">
         <a xid="a1">
