@@ -1,58 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$UI/system/components/justep/window/window" design="device:m;">  
-  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:609px;left:445px;"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="userData" idColumn="id"><column label="id" name="id" type="String" xid="xid1"></column>
-  <column label="昵称" name="nicheng" type="String" xid="xid2"></column>
-  <column label="头像" name="touxiang" type="String" xid="xid3"></column>
-  <column label="性别" name="xingbie" type="String" xid="xid4"></column>
-  <column label="生日" name="shengri" type="String" xid="xid5"></column>
-  <column label="真实姓名" name="name" type="String" xid="xid6"></column>
-  <column label="手机号" name="shouji" type="String" xid="xid7"></column>
-  <column label="地址" name="dizhi" type="String" xid="xid8"></column>
-  <column label="公司" name="gongsi" type="String" xid="xid9"></column>
-  <column label="职位" name="zhiwei" type="String" xid="xid10"></column></div></div> 
-<div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1">
-   <div class="x-titlebar-left" xid="left1"></div>
-   <div class="x-titlebar-title" xid="title1"><span xid="span1"><![CDATA[个人信息]]></span></div>
-   <div class="x-titlebar-right reverse" xid="right1"></div></div>
-  <div component="$UI/system/components/justep/panel/panel" class="panel panel-default x-card x-has-iosstatusbar" xid="panel1">
-   
-   
-   <ul class="list-group x-tuniu" xid="ul1">
-    <li class="center-block list-group-item" xid="li1" style="height:80px;">头像
-     <span class="pull-right text-muted" xid="span2" style="width:60px;height:60px;"><![CDATA[]]>
-  <img alt="" xid="image2" class="img1" src="$UI/DirectSeeding/img/消息头像.jpg" height="100%" style="width:100%;"></img></span> 
-     </li> 
-    <li class="list-group-item" xid="li2">昵称
-     <span class="pull-right text-muted" xid="span2"><![CDATA[]]>
-  <i xid="i12" class="icon-ios7-arrow-forward"></i></span> 
-     </li> 
-    <li class="list-group-item" xid="li3">性别
-     <span class="pull-right text-muted" xid="span3"><![CDATA[]]>
-  <i xid="i11" class="icon-ios7-arrow-forward"></i></span> 
-     </li> 
-    <li class="list-group-item" xid="li4">生日
-     <span class="pull-right text-muted" xid="span4"><![CDATA[  ]]>
-  <i xid="i10" class="icon-ios7-arrow-forward"></i></span> 
-     </li> 
-    <li class="list-group-item" xid="li5">真实姓名
-     <span class="pull-right text-muted" xid="span5">
-      <i xid="i21" class="icon-ios7-arrow-forward"></i></span> 
-     </li> 
-    <li class="list-group-item" xid="li6">手机号
-     <span class="pull-right text-muted" xid="span6"><![CDATA[]]>
-  <i xid="i9" class="icon-ios7-arrow-forward"></i></span> 
-     </li> 
-    <li class="list-group-item" xid="li7">地址
-     <span class="pull-right text-muted" xid="span7">
-      <i xid="i25" class="icon-ios7-arrow-forward"></i></span> 
-     </li> <li class="list-group-item" xid="li9">公司
-   <span class="pull-right text-muted" xid="span9">
-    <i xid="i4" class="icon-ios7-arrow-forward"></i></span> 
-   </li><li class="list-group-item" xid="li10">职位
-   <span class="pull-right text-muted" xid="span10">
-    <i xid="i6" class="icon-ios7-arrow-forward"></i></span> 
-   </li></ul> </div>
-  
-  
-  <div component="$UI/system/components/justep/toolBar/toolBar" class="x-toolbar x-toolbar-spliter form-inline" xid="toolBar1"><button xid="baocunbutton" style="width:100px;"><![CDATA[保存]]></button></div></div>
+  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:21px;left:144px;"></div> 
+<div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel32">
+   <div class="x-panel-top" xid="top12">
+    <div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar14" title="个人信息">
+     <div class="x-titlebar-left" xid="left14">
+      <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" label="button" xid="button63" icon="icon-chevron-left">
+       <i xid="i110" class="icon-chevron-left"></i>
+       <span xid="span240"></span></a> </div> 
+     <div class="x-titlebar-title" xid="title13">个人信息</div>
+     <div class="x-titlebar-right reverse" xid="right14"><span xid="span1"><![CDATA[]]></span></div></div> </div> 
+   <div class="x-panel-content" xid="content22">
+    <div component="$UI/system/components/justep/controlGroup/controlGroup" class="x-control-group" title="title" xid="controlGroup1">
+     <ul xid="ul1" style="height:60px;"><li>头像：<span xid="span9" class="pull-right" style="height:60px;width:60px;"><img src="$UI/DirectSeeding/img/消息头像.jpg" alt="" xid="image2" height="100%" style="width:100%;"></img></span></li></ul><div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelEdit1">
+      <label class="x-label" xid="label1">昵称：</label>
+      <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="userName"></input></div> 
+     <div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelEdit1">
+      <label class="x-label" xid="label2"><![CDATA[性别：]]></label>
+      <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="phonenumber"></input></div> 
+     <div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelEdit4">
+      <label class="x-label" xid="label1">生日：</label>
+      <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="weixin"></input></div> 
+     <div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelEdit5">
+      <label class="x-label" xid="label5">真实姓名：</label>
+      <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="referee"></input></div> 
+     <div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelEdit2">
+   <label class="x-label" xid="label3"><![CDATA[手机号：]]></label>
+   <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="input6"></input></div>
+  <div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelEdit3">
+   <label class="x-label" xid="label4"><![CDATA[地址：]]></label>
+   <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="input7"></input></div>
+  <div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelEdit6">
+   <label class="x-label" xid="label6"><![CDATA[公司：]]></label>
+   <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="input8"></input></div>
+  <div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelEdit7">
+   <label class="x-label" xid="label7"><![CDATA[职位：]]></label>
+   <input component="$UI/system/components/justep/input/input" class="form-control x-edit" xid="input9"></input></div>
+  </div> </div> 
+   <div class="x-panel-bottom" xid="bottom7"><a component="$UI/system/components/justep/button/button" class="btn btn-default center-block" label="确定" xid="quedin">
+   <i xid="i109"></i>
+   <span xid="span239">确定</span></a></div></div></div>
