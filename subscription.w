@@ -40,5 +40,7 @@
    
    
    </div>
-  <div class="x-panel-bottom" xid="bottom1"><button xid="button2" class="center-block bun btn-default" style="height:100%;width:100%;"><![CDATA[订阅专栏]]></button></div></div> 
+  <div class="x-panel-bottom" xid="bottom1">
+  <button xid="button2" class="center-block bun btn-default" style="height:100%;width:100%;"><![CDATA[订阅专栏]]></button>
+  </div></div> 
 </div>
