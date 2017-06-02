@@ -57,7 +57,7 @@
       <li xid="li1" class="list-group-item x-flex" bind-click="detailClick">
        <div xid="mediaLeft1" class="media-left">
         <a xid="a1">
-         <img alt="" xid="image4" class="img-responsive img_new" bind-attr-src='$model.getimgurl("images",  val("id"),  val("img"))' style="width:50px;" height="50px"></img></a> </div> 
+         <img alt="" xid="image4" class="img-responsive img_new" bind-attr-src='$model.getimgurl("images",  val("id"),  val("img"))' height="50px" style="width:50px;"></img></a> </div> 
        <div class="x-flex1" xid="col26">
         <h5 class="o-nomargintop" xid="h51" bind-text='ref("title")'></h5>
         <span style="text-align: justify;" bind-text='ref("remark")' class="text-muted" xid="span36"></span>
