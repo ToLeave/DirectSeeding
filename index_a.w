@@ -8,7 +8,7 @@
   <column name="id" type="String" xid="xid4"></column>
   <data xid="default1">[{&quot;title&quot;:&quot;111&quot;,&quot;content&quot;:&quot;111111&quot;,&quot;time&quot;:&quot;11111&quot;,&quot;id&quot;:&quot;1&quot;},{&quot;title&quot;:&quot;222&quot;,&quot;content&quot;:&quot;2222222&quot;,&quot;time&quot;:&quot;22222&quot;,&quot;id&quot;:&quot;2&quot;}]</data>
   <column label="日期" name="data" type="String" xid="xid5"></column></div></div> 
-<div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
+<span component="$UI/system/components/justep/timer/timer" xid="timer2" onTimer="timer2Timer" interval="60000"></span><div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1">
    <div class="x-panel-top" xid="top1"><div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1">
    <div class="x-titlebar-left" xid="left1"></div>
    <div class="x-titlebar-title" xid="title1">

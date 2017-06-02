@@ -4,6 +4,7 @@ define(function(require){
 	var url = "http://192.168.17.103:9292";
 	var Model = function(){
 		this.callParent();
+		this.zhuanlanid="";
 	};
 
 	Model.prototype.timeDataCustomRefresh = function(event){
@@ -16,7 +17,7 @@ define(function(require){
 			"dataType" : "jsonp",
 			"async" : false,
 			
-			"url" : url+"/mobiles/shipanzhibo?mianfeiid=1",
+			"url" : url+"/mobiles/shipanzhibo?mianfeiid="+this.params.zhuanlanid,
 			"timeData" : {
 				"action" : "",
 			},
@@ -92,24 +93,43 @@ define(function(require){
 	};
 	
  
-
-
-
-	Model.prototype.modelLoad = function(event){
 var timer =60;
-function Countdown() {
+var Countdown = function() {
     if (timer >= 1) {
         timer -= 1;
         setTimeout(function() {
             Countdown();
         }, 1000);
         $('.span4').text(timer);
-                
+          }
+    else{
+    timer=60;
+  
+ 
+    
     }
-}
-setInterval(Countdown(),1000);
+    
+};
+
+Model.prototype.modelLoad = function(event){
 Countdown();
+
+
 	};
+
+
+	Model.prototype.timer2Timer = function(event){
+	var timedata=this.comp("timeData");
+    timedata.refreshData();
+   
+      Countdown();
+	};
+
+
+
+
+
+
 
 
 

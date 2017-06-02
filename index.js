@@ -24,6 +24,10 @@ var Model = function() {
 					"subscription" : {
 					url : require.toUrl('./subscription.w')
 				},
+				
+					"index_a" : {
+					url : require.toUrl('./index_a.w')
+				},
 //				"post" : {
 //					url : require.toUrl('./post.w')
 //				},

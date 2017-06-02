@@ -86,10 +86,17 @@ var newData=this.comp("newData")
 
 
 	Model.prototype.detailClick = function(event){
+	var row = event.bindingContext.$object;
+var count=1;
+if(count==1)
+{
+justep.Shell.showPage("index_a",{
+zhuanlanid:row.val("id")
 
+});
+}
+else{
 
-var row = event.bindingContext.$object;
-		
 		justep.Shell.showPage("subscription", {
 			zhuanlanid :row.val("id"),
 			title :row.val("title"),
@@ -97,7 +104,7 @@ var row = event.bindingContext.$object;
 			remark :row.val("remark"),
 			price :row.val("price")
 		});
-
+}
 //alert(row.val('id'))
 // $.ajax({
 //			"type" : "post",
