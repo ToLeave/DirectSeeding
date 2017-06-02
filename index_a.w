@@ -14,9 +14,6 @@
    <div class="x-titlebar-title" xid="title1">
     <span xid="span1"><![CDATA[股神直播]]></span></div> 
    <div class="x-titlebar-right reverse" xid="right1">
-    <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" label="目录" xid="menuBtn" icon="icon-compose">
-     <i xid="i1" class="icon-compose"></i>
-     <span xid="span2">目录</span></a> 
     <i xid="i2"></i></div> </div></div>
    <div class="x-panel-content  x-scroll-view" xid="content1" _xid="C6FB78EFFFC00001CA6F1FE07CB01429" style="bottom: 54px;">
   <div class="x-scroll" component="$UI/system/components/justep/scrollView/scrollView" xid="scrollView1">

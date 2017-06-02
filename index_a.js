@@ -94,25 +94,43 @@ define(function(require){
 	
  
 var timer =60;
+var firstrun=false;
 var Countdown = function() {
     if (timer >= 1) {
         timer -= 1;
+       
         setTimeout(function() {
             Countdown();
         }, 1000);
+
+        firstrun=true;
         $('.span4').text(timer);
           }
     else{
+   // clearInterval(Countdown);
     timer=60;
-  
- 
-    
-    }
+      }
     
 };
+var timecount=60;
+var self=this;
+var mytimer = window.setInterval(function() {
+			$('.span4').text(timecount);
+			timecount--;
+			if (timecount < 0) {
+			clearInterval(mytimer);//杀掉timer的话不会循环
+			var timedata=self.comp("timeData");
+           timedata.refreshData();
+           timecount=60;
+			}
+
+		}, 1000);
+
 
 Model.prototype.modelLoad = function(event){
 Countdown();
+
+
 
 
 	};
@@ -123,6 +141,7 @@ Countdown();
     timedata.refreshData();
    
       Countdown();
+
 	};
 
 

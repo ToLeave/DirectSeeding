@@ -23,21 +23,17 @@ var Model = function() {
 					"subscription" : {
 					url : require.toUrl('./subscription.w')
 				},
-
-				
-					"index_a" : {
-					url : require.toUrl('./index_a.w')
-},
-									"translate" : {
+					
+					"translate" : {
 					url : require.toUrl('./translate.w')
 				},
-									"contact" : {
+					"contact" : {
 					url : require.toUrl('./contact.w')
 				},
-									"activity" : {
+					"activity" : {
 					url : require.toUrl('./activity.w')
 				},
-									"record" : {
+					"record" : {
 					url : require.toUrl('./record.w')
 
 				},
