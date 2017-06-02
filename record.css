@@ -1,0 +1,18 @@
+.btn-group{ height:40px; border-top:1px solid #e7e7e7; border-bottom:1px solid #e7e7e7;}
+.btn-group .btn{ border-left:1px solid #e7e7e7; color:#666;}
+.text-white{ color:#fff;}
+.text-black{ color:#212121;}
+.text-danger{ color:#ff4400;}
+
+/*顶部titlebar**/
+.x-titlebar{ background-color:#;}
+.tb-index.x-titlebar .x-titlebar-title{ padding:10px 0;}
+.tb-index.x-titlebar .form-group input{ font-size:16px; background-color:#ff4400; border-top:0; border-left:0; border-right:0;}
+.tb-index.x-titlebar .form-group input:focus{ box-shadow:none;}
+
+.tb-nopadding{ padding:0;}
+
+
+/*单列内容*/
+.media{ margin-top:0; padding:10px; border-bottom:1px solid #e7e7e7; background-color:#fff;}
+

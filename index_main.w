@@ -96,7 +96,7 @@
     <div xid="div9" class="h5 text-white"></div></div> 
    
    <div component="$UI/system/components/justep/panel/panel" class="panel panel-default x-card" xid="panel3" bind-click="panel3Click">
-    <div class="list-group-item" xid="div14">
+    <div class="list-group-item" xid="geren_div" bind-click="geren_divClick">
      <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right" label="button" xid="button11" icon="icon-ios7-arrow-right">
       <i xid="i17" class="icon-ios7-arrow-right text-muted"></i>
       <span xid="span14"></span></a> 
@@ -106,7 +106,7 @@
      <span xid="span15"><![CDATA[个人信息]]></span></div> </div> 
    <div component="$UI/system/components/justep/panel/panel" class="panel panel-default x-card" xid="panel4">
     <ul xid="ul1">
-     <li class="list-group-item" xid="li2">
+     <li class="list-group-item" xid="huodong_li" bind-click="huodong_liClick">
       <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right" label="button" xid="button12" icon="icon-ios7-arrow-right">
        <i xid="i18" class="icon-ios7-arrow-right text-muted"></i>
        <span xid="span17"></span></a> 
@@ -114,7 +114,7 @@
        <i xid="i26" class="icon-bag text-warning"></i>
        <span xid="span18"></span></a> 
       <span xid="span16"><![CDATA[我的活动]]></span></li> 
-     <li class="list-group-item" xid="li2">
+     <li class="list-group-item" xid="jilu_li" bind-click="jilu_liClick">
       <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right" label="button" xid="button14" icon="icon-ios7-arrow-right">
        <i xid="i27" class="icon-ios7-arrow-right text-muted"></i>
        <span xid="span20"></span></a> 
@@ -122,7 +122,7 @@
        <i xid="i28" class="icon-clipboard"></i>
        <span xid="span21"></span></a> 
       <span xid="span19"><![CDATA[购买记录]]></span></li> 
-     <li class="list-group-item" xid="li2">
+     <li class="list-group-item" xid="lianxi_li" bind-click="lianxi_liClick">
       <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right" label="button" xid="button16" icon="icon-ios7-arrow-right">
        <i xid="i29" class="icon-ios7-arrow-right text-muted"></i>
        <span xid="span23"></span></a> 
@@ -131,7 +131,7 @@
        <span xid="span24"></span></a> 
       <span xid="span22"><![CDATA[联系我们]]></span></li> </ul> </div> 
    <div component="$UI/system/components/justep/panel/panel" class="panel panel-default x-card" xid="panel5">
-    <div class="list-group-item" xid="div2">
+    <div class="list-group-item" xid="fankui_div" bind-click="fankui_divClick">
      <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right" label="button" xid="button18" icon="icon-ios7-arrow-right">
       <i xid="i31" class="icon-ios7-arrow-right text-muted"></i>
       <span xid="span26"></span></a> 
