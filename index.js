@@ -19,14 +19,27 @@ var Model = function() {
 				},
 					"userinformation" : {
 					url : require.toUrl('./userinformation.w')
-				},
-					
+				},					
 					"subscription" : {
 					url : require.toUrl('./subscription.w')
 				},
+
 				
 					"index_a" : {
 					url : require.toUrl('./index_a.w')
+},
+									"translate" : {
+					url : require.toUrl('./translate.w')
+				},
+									"contact" : {
+					url : require.toUrl('./contact.w')
+				},
+									"activity" : {
+					url : require.toUrl('./activity.w')
+				},
+									"record" : {
+					url : require.toUrl('./record.w')
+
 				},
 //				"post" : {
 //					url : require.toUrl('./post.w')

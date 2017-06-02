@@ -127,8 +127,29 @@ else{
 	};
 
 
-	Model.prototype.panel3Click = function(event){
+
+	Model.prototype.geren_divClick = function(event){
 justep.Shell.showPage("userinformation")
+	};
+
+
+	Model.prototype.huodong_liClick = function(event){
+		justep.Shell.showPage("activity")
+	};
+
+
+	Model.prototype.jilu_liClick = function(event){
+		justep.Shell.showPage("record")
+	};
+
+
+	Model.prototype.lianxi_liClick = function(event){
+		justep.Shell.showPage("contact")
+	};
+
+
+	Model.prototype.fankui_divClick = function(event){
+		justep.Shell.showPage("translate")
 	};
 
 
