@@ -42,6 +42,11 @@ define(function(require){
 //						event.options.index = 0;
 	};
 	
+	Model.prototype.todaydata=function()
+	{
+	return justep.Date.toString(new Date(),'yyyy-MM-dd');
+	};
+	
 	Model.prototype.changeColor = function(id) {
 
     var a = String(id);
@@ -108,6 +113,7 @@ var Countdown = function() {
           }
     else{
    // clearInterval(Countdown);
+   clearInterval(Countdown);
     timer=60;
       }
     
@@ -130,9 +136,6 @@ var Countdown = function() {
 Model.prototype.modelLoad = function(event){
 Countdown();
 
-
-
-
 	};
 
 
@@ -154,6 +157,21 @@ Countdown();
 
 	Model.prototype.personalCenterBtnClick = function(event){
 //justep.Shell.showPage("index_main");
+	};
+
+
+
+
+
+
+
+
+
+	Model.prototype.shuxinspanClick = function(event){
+	var timedata=this.comp("timeData");
+    timedata.refreshData();
+     clearInterval(Countdown);
+    timer=60;
 	};
 
 

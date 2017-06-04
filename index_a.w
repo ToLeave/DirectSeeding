@@ -21,15 +21,16 @@
    <div class="x-content-center x-pull-down container" xid="div1">
    <i class="x-pull-down-img glyphicon x-icon-pull-down" xid="i8"></i>
    <span class="x-pull-down-label" xid="span15">下拉刷新...</span></div><div xid="div5"><div component="$UI/system/components/justep/row/row" class="x-row" xid="row3">
-   <div class="x-col" xid="col5"><div component="$UI/system/components/justep/output/output" class="x-output" xid="output1" bind-ref='$model.timeData.ref("data")'></div></div>
-   <div class="x-col" xid="col6"><div component="$UI/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30" xid="labelEdit2">
-   <label class="x-label" xid="label4"><![CDATA[还有]]></label>
-   <span xid="span4" class="span4"><![CDATA[]]></span><div component="$UI/system/components/justep/output/output" class="x-output x-edit" xid="output2" style="width:152px;"></div></div></div>
-   <div class="x-col" xid="col8"></div></div></div><div class="x-scroll-content" xid="div2"><div component="$UI/system/components/justep/list/list" class="x-list x-list-padding" xid="list1" data="timeData">
+   
+   <div class="x-col" xid="col8"><span xid="span10" bind-text="$model.todaydata()"><![CDATA[]]></span>
+  <span xid="span12" class="span12"><![CDATA[还有]]></span><span xid="span4" class="text-danger span4"></span>
+  <span xid="span13" class="span13"><![CDATA[秒自动刷新]]></span>
+  <span xid="shuxinspan" class="text-danger span16" bind-click="shuxinspanClick"><![CDATA[立即刷新]]></span></div></div></div><div class="x-scroll-content" xid="div2"><div component="$UI/system/components/justep/list/list" class="x-list x-list-padding" xid="list1" data="timeData">
    <ul class="x-list-template" xid="listTemplateUl1">
     <li xid="li1"><div xid="div4" class="timeline"><div xid="div6" class="time"><span xid="span3" bind-style='{"color": $model.changeColor( $object.val("id"))}' bind-text='ref("time")'><![CDATA[]]></span></div><div xid="div3" class="timeline-image" bind-style='{"background-color": $model.changeColor( $object.val("id"))}'></div>
   <div component="$UI/system/components/justep/row/row" class="x-row timeline-content" xid="row2">
-   <div class="x-col" xid="col4"><span xid="span14" style="font-weight:bold;" bind-text="ref('content')"><![CDATA[]]></span>
+   <div class="x-col" xid="col4"><span xid="span14" style="font-weight:bold;" bind-text="ref('content')"><![CDATA[]]>
+  </span>
   <p xid="p1" style="font-size:x-small;"><![CDATA[]]></p></div>
    </div></div></li></ul> </div></div>
    <div class="x-content-center x-pull-up" xid="div7">
