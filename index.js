@@ -17,6 +17,7 @@ var Model = function() {
 				"index_a" : {
 					url : require.toUrl('./index_a.w')
 				},
+				
 					"userinformation" : {
 					url : require.toUrl('./userinformation.w')
 				},					

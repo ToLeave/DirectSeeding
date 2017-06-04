@@ -41,6 +41,6 @@
      <i xid="i5" class="linear linear-textalignjustify"></i>
      <span xid="span7">实盘直播</span></a> </div> 
    <div class="x-col" xid="col3">
-    <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-left" label="华山论剑" xid="personalCenterBtn" icon="linear linear-chevronup">
+    <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-lg btn-icon-left" label="华山论剑" xid="personalCenterBtn" icon="linear linear-chevronup" onClick="personalCenterBtnClick">
      <i xid="i7" class="linear linear-chevronup"></i>
      <span xid="span9">华山论剑</span></a> </div> </div></div></div></div>
