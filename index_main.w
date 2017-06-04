@@ -37,9 +37,6 @@
    <div class="x-titlebar-title" xid="title1">
     <span xid="span1"><![CDATA[股神直播]]></span></div> 
    <div class="x-titlebar-right reverse" xid="right1">
-    <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" label="目录" xid="menuBtn" icon="icon-compose">
-     <i xid="i1" class="icon-compose"></i>
-     <span xid="span2">目录</span></a> 
     <i xid="i2"></i></div> </div></div>
    <div class="x-panel-content" xid="content" _xid="C6F5C7749DD00001559019B51AB0AE00" style="bottom: 54px;">
   
@@ -95,7 +92,7 @@
     
     <div xid="div9" class="h5 text-white"></div></div> 
    
-   <div component="$UI/system/components/justep/panel/panel" class="panel panel-default x-card" xid="panel3" bind-click="panel3Click">
+   <div component="$UI/system/components/justep/panel/panel" class="panel panel-default x-card" xid="panel3">
     <div class="list-group-item" xid="geren_div" bind-click="geren_divClick">
      <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right" label="button" xid="button11" icon="icon-ios7-arrow-right">
       <i xid="i17" class="icon-ios7-arrow-right text-muted"></i>
@@ -147,7 +144,9 @@
    <div class="x-col" xid="col2">
     <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top" label="消息" xid="newBtn" icon="round round-safari" target="newContent">
      <i xid="i6" class="round round-safari"></i>
-     <span xid="span8">消息</span></a> </div> 
+     <span xid="span8">消息</span>
+  </a> 
+  <span xid="span12"><![CDATA[3]]></span></div> 
    <div class="x-col" xid="col3">
     <a component="$UI/system/components/justep/button/button" class="btn btn-link btn-xs btn-icon-top" label="个人中心" xid="userBtn" icon="icon-android-contact" target="userContent">
      <i xid="i7" class="icon-android-contact"></i>
