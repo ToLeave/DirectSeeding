@@ -1,7 +1,7 @@
 define(function(require){
 	var $ = require("jquery");
 	var justep = require("$UI/system/lib/justep");
-	var url = "http://192.168.17.103:9292"
+	var url = "http://192.168.17.103:9292";
 	
 	var Model = function(){
 		this.callParent();
@@ -13,7 +13,7 @@ define(function(require){
 	};
 
 	Model.prototype.zhuanlanDataCustomRefresh = function(event){
-			var zhuanlandata=this.comp("zhuanlanData")
+			var zhuanlandata=this.comp("zhuanlanData");
 		zhuanlandata.clear();
        $.ajax({
 			"type" : "post",
@@ -51,7 +51,7 @@ define(function(require){
 //	};
 
 	Model.prototype.newDataCustomRefresh = function(event){
-var newData=this.comp("newData")
+var newData=this.comp("newData");
 		newData.clear();
        $.ajax({
 			"type" : "post",
