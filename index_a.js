@@ -156,7 +156,7 @@ Countdown();
 
 
 	Model.prototype.personalCenterBtnClick = function(event){
-//justep.Shell.showPage("index_main");
+justep.Shell.showPage("main");
 	};
 
 
