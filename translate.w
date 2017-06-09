@@ -3,12 +3,15 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$UI/system/components/justep/window/window" design="device:m;">  
   <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:622px;left:332px;"/> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1" style="background-color:#F2F2F2;">
-   <div class="x-panel-top" xid="top1"><div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1">
+   <div class="x-panel-top" xid="top1"></div>
+   <div class="x-panel-content" xid="content1"><div xid="div1"><p xid="p1" style="font-size:medium;"><![CDATA[问题和意见]]></p></div>
+  <div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1">
    <div class="x-titlebar-left" xid="left1"><a component="$UI/system/components/justep/button/button" class="btn btn-link btn-only-icon" label="返回" xid="backBtn" icon="icon-chevron-left">
    <i xid="i1" class="icon-chevron-left"></i>
    <span xid="span2">返回</span></a></div>
    <div class="x-titlebar-title" xid="title1"><span xid="span1"><![CDATA[问题反馈]]></span></div>
    <div class="x-titlebar-right reverse" xid="right1"></div>
+
   </div></div>
    <div class="x-panel-content" xid="content1"><div component="$UI/system/components/justep/row/row" class="x-row" xid="row5">
    <div class="x-col" xid="col14"><span xid="span4"><![CDATA[问题和意见]]></span></div>
@@ -33,4 +36,5 @@
      <span xid="span5">提交</span></a> </div> 
    </div>
   </div>
+
    </div></div>
