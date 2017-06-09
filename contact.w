@@ -4,22 +4,22 @@
   design="device:m;">  
   <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:538px;left:483px;"> 
     <div component="$UI/system/components/justep/data/data" autoLoad="true"
-      xid="dizhiData" idColumn="id"> 
+      xid="dizhiData" idColumn="id" onBeforeRefresh="dizhiDataBeforeRefresh"> 
       <column label="id" name="id" type="String" xid="xid1"></column>
   <column label="公司名称" name="definition" type="String" xid="xid10"></column>
   <column label="公司地址" name="address" type="String" xid="xid11"></column>
   <data xid="default3">[{&quot;id&quot;:&quot;1&quot;,&quot;definition&quot;:&quot;中水系信息科技有限公司&quot;,&quot;address&quot;:&quot;玉溪市红塔区彩虹路XX号&quot;},{&quot;id&quot;:&quot;2&quot;,&quot;definition&quot;:&quot;中水系通海分公司&quot;,&quot;address&quot;:&quot;通海县XXXX&quot;}]</data></div> 
-  <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="dianhuadata" idColumn="id">
+  <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="dianhuaData" idColumn="id" onBeforeRefresh="dianhuadataBeforeRefresh">
    <column label="id" name="id" type="String" xid="column1"></column>
   <column label="电话联系人姓名" name="name_p" type="String" xid="column2"></column>
   <column label="联系电话" name="phone" type="String" xid="column3"></column>
   <data xid="default1">[{&quot;id&quot;:&quot;1&quot;,&quot;name_p&quot;:&quot;张先生&quot;,&quot;phone&quot;:&quot;135XXXXXXXX&quot;},{&quot;id&quot;:&quot;2&quot;,&quot;name_p&quot;:&quot;李小姐&quot;,&quot;phone&quot;:&quot;135XXXXXXXX&quot;}]</data></div>
-  <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="youxiangdata" idColumn="id">
+  <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="youxiangData" idColumn="id" onCustomRefresh="youxiangdataCustomRefresh">
    <column label="id" name="id" type="String" xid="column10"></column>
   <column label="邮箱联系人姓名" name="name_e" type="String" xid="column13"></column>
   <column label="联系邮箱" name="email" type="String" xid="column14"></column>
   <data xid="default2">[{&quot;id&quot;:&quot;1&quot;,&quot;name_e&quot;:&quot;张先生&quot;,&quot;email&quot;:&quot;XXXXX@qq.com&quot;},{&quot;id&quot;:&quot;2&quot;,&quot;name_e&quot;:&quot;里小姐&quot;,&quot;email&quot;:&quot;XXXXX@qq.com&quot;}]</data></div>
-  <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="qitadata" idColumn="id">
+  <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="qitaData" idColumn="id" onCustomRefresh="qitadataCustomRefresh">
    <column label="id" name="id" type="String" xid="column19"></column>
   <column label="联系方式名" name="title" type="String" xid="column24"></column>
   <column label="联系内容" name="content" type="String" xid="column25"></column>
@@ -55,7 +55,7 @@
    <div class="x-control-group-title" xid="controlGroupTitle4">
     <span xid="span4" style="font-size:18px;"></span></div> 
    <div xid="div2" style="margin-top:10px;font-size:16px;margin-left:10px;text-decoration:none;font-weight:bold;">联系电话</div>
-  <div component="$UI/system/components/justep/list/list" class="x-list" xid="list1" data="dianhuadata">
+  <div component="$UI/system/components/justep/list/list" class="x-list" xid="list1" data="dianhuaData">
    <ul class="x-list-template" xid="listTemplateUl1">
     <li xid="li1">
      <div component="$UI/system/components/justep/row/row" class="x-row" xid="row2">
@@ -64,7 +64,7 @@
       <div class="x-col" xid="col3">
        <div component="$UI/system/components/justep/output/output" style="margin-top:-8px;font-size:16px;" class="x-output" xid="output1" bind-ref='ref("phone")'></div></div> </div> </li> </ul> </div>
   <div xid="div3" style="margin-top:10px;font-size:16px;margin-left:10px;font-weight:bold;">联系邮箱</div>
-  <div component="$UI/system/components/justep/list/list" class="x-list" xid="list3" data="youxiangdata">
+  <div component="$UI/system/components/justep/list/list" class="x-list" xid="list3" data="youxiangData">
    <ul class="x-list-template" xid="listTemplateUl3">
     <li xid="li3">
      <div component="$UI/system/components/justep/row/row" class="x-row" xid="row3">
@@ -74,7 +74,7 @@
        <div component="$UI/system/components/justep/output/output" style="margin-top:-8px;font-size:16px;" class="x-output" xid="output3" bind-ref='ref("email")'></div></div> </div> </li> </ul> </div>
   <div xid="div5" style="margin-top:10px;font-size:16px;margin-left:10px;font-weight:bold;">其他联系方式
   </div>
-  <div component="$UI/system/components/justep/list/list" class="x-list" xid="list5" data="qitadata">
+  <div component="$UI/system/components/justep/list/list" class="x-list" xid="list5" data="qitaData">
    <ul class="x-list-template" xid="listTemplateUl5">
     <li xid="li5">
      <div component="$UI/system/components/justep/row/row" class="x-row" xid="row5">
