@@ -35,7 +35,7 @@
    <div class="x-panel-top" xid="top1"><div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar1">
    <div class="x-titlebar-left" xid="left1"></div>
    <div class="x-titlebar-title" xid="title1">
-    <span xid="span1"><![CDATA[股神直播]]></span></div> 
+    <span xid="span1"><![CDATA[直播]]></span></div> 
    <div class="x-titlebar-right reverse" xid="right1">
     <i xid="i2"></i></div> </div></div>
    <div class="x-panel-content" xid="content" _xid="C6F5C7749DD00001559019B51AB0AE00" style="bottom: 54px;">

@@ -87,7 +87,7 @@ var newData=this.comp("newData");
 
 	Model.prototype.detailClick = function(event){
 	var row = event.bindingContext.$object;
-var count=1;
+var count=2;
 if(count==1)
 {
 justep.Shell.showPage("index_a",{
