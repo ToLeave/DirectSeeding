@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$UI/system/components/justep/window/window" design="device:m;">  
-  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;left:312px;top:368px;">
+  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:356px;left:311px;">
   <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="zhuanlanData" idColumn="id" onCustomRefresh="zhuanlanDataCustomRefresh">
    <column label="id" name="id" type="String" xid="xid1"></column>
   <column label="标题" name="title" type="String" xid="xid2"></column>

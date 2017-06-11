@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window" component="$UI/system/components/justep/window/window" design="device:m;">  
-  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:622px;left:332px;"/> 
+  <div component="$UI/system/components/justep/model/model" xid="model" style="height:auto;top:447px;left:329px;"><div component="$UI/system/components/justep/data/data" autoLoad="true" xid="fankuiData" idColumn="id"><column label="id" name="id" type="String" xid="xid1"></column></div></div> 
 <div component="$UI/system/components/justep/panel/panel" class="x-panel x-full" xid="panel1" style="background-color:#F2F2F2;">
    <div class="x-panel-top" xid="top1"><div component="$UI/system/components/justep/titleBar/titleBar" class="x-titlebar" xid="titleBar2">
    <div class="x-titlebar-left" xid="left2">
@@ -21,7 +21,7 @@
     <div xid="div2">
    <p xid="p2" style="font-size:medium;"><![CDATA[图片（选填，提供问题截图）]]></p></div></div> </div>
   <div component="$UI/system/components/justep/row/row" class="x-row" xid="row2">
-   <div class="x-col" xid="col6"><div xid="div5" class="swiper-container" style="height:200px;"><div xid="div4" class="swiper-wrapper"><div xid="div3" class="swiper-slide" style="height:220px;"><span xid="span3" class="uploader-button"><input type="file" value="" xid="attchInput"></input></span>
+   <div class="x-col" xid="col6"><div xid="div5" class="swiper-container"><div xid="div4" class="swiper-wrapper"><div xid="div3" style="height:220px;" class="swiper-slide"><span xid="span3" class="uploader-button"><input type="file" value="" xid="attchInput" bind-change="attchInputChange"></input></span>
   </div></div>
   </div></div></div>
   <div component="$UI/system/components/justep/row/row" class="x-row" xid="row4">
@@ -29,7 +29,7 @@
    <p xid="p3" style="font-size:medium;">qq邮箱</p></div><input component="$UI/system/components/justep/input/input" class="form-control" xid="emailInput" placeHolder="（选填，方便我们联系你）"></input></div>
    </div><div component="$UI/system/components/justep/row/row" class="x-row" xid="row1">
    <div class="x-col text-center" xid="col2">
-    <a component="$UI/system/components/justep/button/button" class="btn btn-default btn-block" label="提交" xid="submitBtn">
+    <a component="$UI/system/components/justep/button/button" class="btn btn-default btn-block" label="提交" xid="submitBtn" onClick="submitBtnClick">
      <i xid="i2"></i>
      <span xid="span5">提交</span></a> </div> 
    </div>

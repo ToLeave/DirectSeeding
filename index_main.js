@@ -20,7 +20,7 @@ define(function(require){
 			"dataType" : "jsonp",
 			"async" : false,
 			
-			"url" : url+"/mobiles/zhuanlan?",
+			"url" : url+"/mobiles/zhuanlan",
 			"zhuanlandata" : {
 				"action" : "",
 			},
@@ -58,7 +58,7 @@ var newData=this.comp("newData");
 			"dataType" : "jsonp",
 			"async" : false,
 			
-			"url" : url+"/mobiles/information?",
+			"url" : url+"/mobiles/information",
 			"newData" : {
 				"action" : "",
 			},
@@ -149,7 +149,26 @@ justep.Shell.showPage("userinformation")
 
 
 	Model.prototype.fankui_divClick = function(event){
-		justep.Shell.showPage("translate")
+	
+	 $.ajax({
+			"type" : "post",
+			"dataType" : "jsonp",
+			"async" : false,
+			
+			"url" : url+"/fankuis/addfankui",
+			
+			"success": function(xhr) {
+			//alert(xhr.id)
+			if(xhr.id!=null)
+			{
+			justep.Shell.showPage("translate",{
+			fankuiid:xhr.id
+			
+			});
+			}
+			}
+			});
+		
 	};
 
 

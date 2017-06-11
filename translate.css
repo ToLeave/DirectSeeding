@@ -3,6 +3,7 @@
 
         width: 100%;
         height: 200px;
+        touch-action: none;
     }
     .swiper-slide {
         text-align: center;
@@ -22,6 +23,7 @@
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+        touch-action: none;
     }
     
     .uploader-button {
@@ -31,7 +33,7 @@
 	background-image: url(./img/add.png);
 	width: 100px;
 	height: 100px;
-
+touch-action: none;
 }
 
 .uploader-button input {
@@ -41,5 +43,6 @@
 	opacity: 0;
 	-ms-filter: 'alpha(opacity=0)';
 	font-size: 200px;
+	touch-action: none;
 }
 
